@@ -1,0 +1,22 @@
+{
+  "metricas_validacao_agregada": {
+    "f1": 0.5669341155494205,
+    "precision": 0.6400649350649351,
+    "recall": 0.5088009084808754,
+    "acuracia": 0.7644823271817329,
+    "roc_auc": 0.7857434997381753,
+    "average_precision": 0.6195739021949328
+  },
+  "matriz_validacao": [
+    [
+      39024,
+      5543
+    ],
+    [
+      9516,
+      9857
+    ]
+  ],
+  "n_validacao": 63940,
+  "n_sem_previsao": 20166
+}

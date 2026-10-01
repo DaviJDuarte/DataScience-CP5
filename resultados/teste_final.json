@@ -1,0 +1,31 @@
+{
+  "metricas": {
+    "f1": 0.5228951255539144,
+    "precision": 0.43505388542257517,
+    "recall": 0.6551822323462415,
+    "acuracia": 0.8067915152072884,
+    "roc_auc": 0.8366953732076398,
+    "average_precision": 0.5086466099245207
+  },
+  "referencia_majoritaria": {
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "acuracia": 0.8384024294851148,
+    "roc_auc": 0.5,
+    "average_precision": 0.16159757051488519
+  },
+  "matriz_confusao": [
+    [
+      15233,
+      2988
+    ],
+    [
+      1211,
+      2301
+    ]
+  ],
+  "n_teste": 21733,
+  "avaliacoes_nesta_versao": 1,
+  "ressalva": "Período já avaliado na versão inicial; não é teste novo/intocado."
+}

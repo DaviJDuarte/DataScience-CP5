@@ -1,0 +1,25 @@
+{
+  "modelo": "Random Forest",
+  "estrategia": "Grid Search",
+  "parametros": {
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "n_estimators": 150
+  },
+  "f1_treino": 1.0,
+  "f1_validacao": 0.5536396190134257,
+  "desvio_f1": 0.048513073965446164,
+  "gap": 0.44636038098657427,
+  "tempo_s": 168.90250199999718,
+  "ajuste_medio_s": 6.027939081192017,
+  "f1_folds": [
+    0.5143312101910829,
+    0.5245966544590716,
+    0.6219909923901227
+  ],
+  "validacao_precision": 0.6464205610412689,
+  "validacao_recall": 0.49576700425917375,
+  "validacao_acuracia": 0.7622789557355647,
+  "validacao_roc_auc": 0.7881295685194004,
+  "validacao_average_precision": 0.6209716401204558
+}

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+.env
+data/
+repos/
+*.log
+piloto_por_autoria/

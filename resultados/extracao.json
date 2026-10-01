@@ -1,0 +1,129 @@
+{
+  "versao": "ancestral-primeiro-pai-v1",
+  "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+  "repositorios": [
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "9009618e6544fb69291b6be38e63519bd1243570b332819f639267cea6789b90",
+      "repo": "hadoop-mapreduce",
+      "alvos": 525,
+      "tempo_s": 1.2661317000020063,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "cdb0fa6b3dd14007ab1c3b827477fcf62d27b18c2cdbea7c9eb092e15ad6b5f8",
+      "repo": "hadoop-hdfs",
+      "alvos": 603,
+      "tempo_s": 1.498055200005183,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "27d4376608d82180cfe51cfac23bd62bdab45ae0a335fe4c755e29a73ffddaef",
+      "repo": "zookeeper",
+      "alvos": 839,
+      "tempo_s": 1.8231344999949215,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "a97de179ef0533fa4c23505f806e01a8a81e8d0996b874bb5baa75f052058250",
+      "repo": "zeppelin",
+      "alvos": 1451,
+      "tempo_s": 3.01993599999696,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "32a4f44418e93dfe08d42c439c1b0dd11e210493619ad29a897e77dd8ecdf994",
+      "repo": "spark",
+      "alvos": 1465,
+      "tempo_s": 23.237189699997543,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "5ab1db70e003363005a0d877bed19da3d649d2d24076205b8675a0ff6e0eb3d0",
+      "repo": "kafka",
+      "alvos": 2384,
+      "tempo_s": 7.98167619999731,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "a76764f12f887ac8e1377431192ce9db034167b07252f342a31e6ff05dbe6972",
+      "repo": "activemq",
+      "alvos": 6126,
+      "tempo_s": 6.1143568999978015,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "7e979ec5db757013e6290e45a5385f5607aadef17495da79fdcbd0d9e6498b0d",
+      "repo": "hive",
+      "alvos": 6842,
+      "tempo_s": 88.31704500000342,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "53d366ecf9f49b725e078b670060c5ef1eb53b23c45a30bb60dede6c195d062b",
+      "repo": "groovy",
+      "alvos": 8059,
+      "tempo_s": 9.982833000001847,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "410414bf330e9295ea59285bf7319aab08a3e99b73cfebdab87c1b5f270ca619",
+      "repo": "cassandra",
+      "alvos": 8159,
+      "tempo_s": 25.962198499997612,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "ddb684ffca124bb736fb701b3e6b741da22347d9ccc5e600116ae0f787014bee",
+      "repo": "hbase",
+      "alvos": 8730,
+      "tempo_s": 24.345174100002623,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "cead1209f9d64c9dd196e3440c7f48f4639e8b12d77d61d044ba3d61458f3ca4",
+      "repo": "flink",
+      "alvos": 11691,
+      "tempo_s": 21.553730499988887,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "4b72d59a2acc7dd802d9b3d800299e70e0e9c1ef26eb5fbc5477271292d78923",
+      "repo": "ignite",
+      "alvos": 12036,
+      "tempo_s": 97.77598489999946,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "68ec73dc21325e173aadca5fb577d9544ce8bfa216c75e20c2080c63c7a19012",
+      "repo": "hadoop",
+      "alvos": 15064,
+      "tempo_s": 43.78375029999006,
+      "git": "git version 2.49.0.windows.1"
+    },
+    {
+      "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+      "alvos_sha256": "1cb9cdb29def2332935745f0b80309fbabef42f2c46c58b797ca913d1b32415f",
+      "repo": "camel",
+      "alvos": 22700,
+      "tempo_s": 33.96852549999312,
+      "git": "git version 2.49.0.windows.1"
+    }
+  ],
+  "linhas": 106674,
+  "python": "3.13.3",
+  "pistas_sha256": "461e99811ef1132bce633b126b8c0dc9620610a9ee711494cde7606c6a952a82"
+}

@@ -1,0 +1,28 @@
+{
+  "modelo": "XGBoost",
+  "estrategia": "Optuna",
+  "parametros": {
+    "n_estimators": 200,
+    "learning_rate": 0.18214744423753768,
+    "max_depth": 5,
+    "min_child_weight": 6
+  },
+  "f1_treino": 0.7521610611499798,
+  "f1_validacao": 0.5513626853894524,
+  "desvio_f1": 0.05781459916803423,
+  "gap": 0.2007983757605274,
+  "tempo_s": 49.607162,
+  "ajuste_medio_s": 0.7284254233042399,
+  "f1_folds": [
+    0.5003239241092087,
+    0.5215641173087981,
+    0.6322000147503504
+  ],
+  "validacao_precision": 0.6420174085169935,
+  "validacao_recall": 0.5048937671475836,
+  "validacao_acuracia": 0.7590354785017794,
+  "validacao_roc_auc": 0.7918702055113674,
+  "validacao_average_precision": 0.6232678107941562,
+  "tempo_melhor_trial_s": 2.5422618000011425,
+  "trials_completos": 20
+}

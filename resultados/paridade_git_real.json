@@ -1,0 +1,23 @@
+[
+  {
+    "project": "apache/zookeeper",
+    "sha": "aa35571ea2be1791430349fcc1485b1bdccec6a1",
+    "paridade_48_entradas": true,
+    "api_conferida": true,
+    "url": "https://github.com/apache/zookeeper/commit/aa35571ea2be1791430349fcc1485b1bdccec6a1"
+  },
+  {
+    "project": "apache/zeppelin",
+    "sha": "12d1bb9a0dc50ef31f07892de32805dec3b40c50",
+    "paridade_48_entradas": true,
+    "api_conferida": false,
+    "url": null
+  },
+  {
+    "project": "apache/kafka",
+    "sha": "06738b41bc2447211d901d09aade7aadd0df6254",
+    "paridade_48_entradas": true,
+    "api_conferida": false,
+    "url": null
+  }
+]

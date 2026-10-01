@@ -1,0 +1,26 @@
+{
+  "modelo": "Dummy",
+  "estrategia": "Baseline",
+  "parametros": {},
+  "f1_treino": 0.0,
+  "f1_validacao": 0.0,
+  "desvio_f1": 0.0,
+  "gap": 0.0,
+  "tempo_s": 0.4922211000084644,
+  "ajuste_medio_s": 0.10732197761535645,
+  "f1_folds": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "validacao_precision": 0.0,
+  "validacao_recall": 0.0,
+  "validacao_acuracia": 0.6961950311838564,
+  "validacao_roc_auc": 0.5,
+  "validacao_average_precision": 0.30380496881614366,
+  "hiperparametros_completos": {
+    "constant": null,
+    "random_state": 42,
+    "strategy": "most_frequent"
+  }
+}

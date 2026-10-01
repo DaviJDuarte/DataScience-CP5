@@ -1,0 +1,42 @@
+{
+  "modelo": "Random Forest",
+  "estrategia": "Baseline",
+  "parametros": {},
+  "f1_treino": 1.0,
+  "f1_validacao": 0.5536396190134257,
+  "desvio_f1": 0.048513073965446164,
+  "gap": 0.44636038098657427,
+  "tempo_s": 18.015544399997452,
+  "ajuste_medio_s": 5.394255638122559,
+  "f1_folds": [
+    0.5143312101910829,
+    0.5245966544590716,
+    0.6219909923901227
+  ],
+  "validacao_precision": 0.6464205610412689,
+  "validacao_recall": 0.49576700425917375,
+  "validacao_acuracia": 0.7622789557355647,
+  "validacao_roc_auc": 0.7881295685194004,
+  "validacao_average_precision": 0.6209716401204558,
+  "hiperparametros_completos": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": null,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 150,
+    "n_jobs": 2,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "dimensoes_originais": [
+    106674,
+    18
+  ],
+  "n_treino_original": 84728,
+  "n_teste_original": 21946,
+  "n_treino": 84106,
+  "n_teste": 21733,
+  "ordenacao": "committer_date Git (integração)",
+  "n_treino_por_autoria_antes_filtro": 85339,
+  "autoria_antes_integracao_depois_corte": 612,
+  "n_excluidos": 835,
+  "inicio_teste": "2017-10-06 17:39:59+00:00",
+  "csv_sha256": "5097cbbbab8c4611a709b3cf95ac5c9fe5f62e619bab081911a2a247ddbed4e0",
+  "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+  "sha_compartilhados": 0,
+  "avaliacao_final": "Holdout já avaliado na versão inicial; reavaliação exploratória, não teste intocado."
+}

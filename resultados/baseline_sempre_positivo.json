@@ -1,0 +1,26 @@
+{
+  "modelo": "Sempre positivo",
+  "estrategia": "Baseline",
+  "parametros": {},
+  "f1_treino": 0.4334827859375568,
+  "f1_validacao": 0.4652144744561413,
+  "desvio_f1": 0.03511508634719422,
+  "gap": -0.03173168851858449,
+  "tempo_s": 0.4825162999914028,
+  "ajuste_medio_s": 0.10581668217976888,
+  "f1_folds": [
+    0.5136195249509697,
+    0.4314037626628075,
+    0.4506201357546466
+  ],
+  "validacao_precision": 0.30380496881614366,
+  "validacao_recall": 1.0,
+  "validacao_acuracia": 0.30380496881614366,
+  "validacao_roc_auc": 0.5,
+  "validacao_average_precision": 0.30380496881614366,
+  "hiperparametros_completos": {
+    "constant": 1,
+    "random_state": 42,
+    "strategy": "constant"
+  }
+}

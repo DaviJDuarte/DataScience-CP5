@@ -1,0 +1,25 @@
+{
+  "modelo": "XGBoost",
+  "estrategia": "Grid Search",
+  "parametros": {
+    "learning_rate": 0.1,
+    "max_depth": 6,
+    "n_estimators": 300
+  },
+  "f1_treino": 0.8161891271377281,
+  "f1_validacao": 0.545841435621191,
+  "desvio_f1": 0.06286081433851905,
+  "gap": 0.27034769151653704,
+  "tempo_s": 23.314006600005087,
+  "ajuste_medio_s": 1.3804008960723877,
+  "f1_folds": [
+    0.4878322725570947,
+    0.5165071302988865,
+    0.6331849040075918
+  ],
+  "validacao_precision": 0.6429885074405229,
+  "validacao_recall": 0.49869744440600483,
+  "validacao_acuracia": 0.757911090007488,
+  "validacao_roc_auc": 0.7903920597474939,
+  "validacao_average_precision": 0.6220320695990684
+}

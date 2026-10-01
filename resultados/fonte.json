@@ -1,0 +1,15 @@
+{
+  "titulo": "ApacheJIT: A Large Dataset for Just-In-Time Defect Prediction",
+  "doi": "10.5281/zenodo.5907847",
+  "versao": "v2",
+  "origem_versao": "Página do registro no Zenodo",
+  "registro": "https://zenodo.org/records/5907847",
+  "metadados": "https://zenodo.org/api/records/5907847",
+  "licenca_metadados": {
+    "id": "cc-by-4.0"
+  },
+  "metadados_verificados_em": "2026-10-01",
+  "arquivo": "apachejit/dataset/apachejit_total.csv",
+  "md5_pacote_verificado": "528bf0ee04b15976be6bf15f8efddc65",
+  "observacao": "HTML sem texto de licença; CC BY 4.0 conferida na API oficial na data indicada."
+}

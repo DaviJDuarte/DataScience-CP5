@@ -1,0 +1,21 @@
+{
+  "status": "Interrompido antes da selecao final; substituido pelo protocolo por integracao Git",
+  "motivo": "608 commits elegiveis tinham autoria antes do corte e integracao depois dele",
+  "comparacao_entradas_csv": "modelo,estrategia,parametros,f1_treino,f1_validacao,desvio_f1,gap,tempo_s,ajuste_medio_s,f1_folds,validacao_precision,validacao_recall,validacao_acuracia,validacao_roc_auc,validacao_average_precision,n_entradas\nXGBoost,Modelo inicial — mesma cobertura,\"{'n_estimators': 250, 'max_depth': 2, 'learning_rate': 0.18857058875004495, 'min_child_weight': 10}\",0.4432188517276357,0.4687402030150644,0.06909902509526328,-0.025521351287428717,1.066052900001523,0.2565433979034424,\"[0.37215315763301837, 0.5041799363057324, 0.5298875151064423]\",0.6285208376508535,0.3858240226007863,0.7435376567723387,0.7711716492816105,0.5753970962548242,3\nXGBoost,Tamanho — configuração fixa,\"{'n_estimators': 400, 'max_depth': 5, 'learning_rate': 0.05, 'min_child_weight': 5, 'subsample': 0.8, 'colsample_bytree': 0.8}\",0.46332839613059956,0.4621404687853546,0.07085525318490654,0.0011879273452449768,2.4798216999915894,0.6688009103139242,\"[0.36358197048264856, 0.49575551782682514, 0.5270839180465899]\",0.6230706971593212,0.3789331870797956,0.7414398250681264,0.7686297257277063,0.5702586546839937,3\nXGBoost,Tamanho + tipo + mensagem,\"{'n_estimators': 400, 'max_depth': 5, 'learning_rate': 0.05, 'min_child_weight': 5, 'subsample': 0.8, 'colsample_bytree': 0.8}\",0.580572021883251,0.4713832212576368,0.07150039327724919,0.10918880062561415,3.4647376999928383,0.9932331244150797,\"[0.3898217780982796, 0.460402397260274, 0.5639254884143571]\",0.6750106778056778,0.37947340810172075,0.7528016696152809,0.7848402646477842,0.6239525264245598,21\nXGBoost,Completo — ancestral,\"{'n_estimators': 400, 'max_depth': 5, 'learning_rate': 0.05, 'min_child_weight': 5, 'subsample': 0.8, 'colsample_bytree': 0.8}\",0.7011300555829009,0.5492186712618468,0.0651669034672334,0.1519113843210541,5.597773400004371,1.6885191599527996,\"[0.48038116591928254, 0.530570142535634, 0.6367047053306237]\",0.6482806828561594,0.502439488355363,0.7614207107535472,0.8006927901341138,0.6292420433608013,48\nXGBoost,Completo + palavras atuais — sensibilidade,\"{'n_estimators': 400, 'max_depth': 5, 'learning_rate': 0.05, 'min_child_weight': 5, 'subsample': 0.8, 'colsample_bytree': 0.8}\",0.6999008809453264,0.5525572910419619,0.06815115577720492,0.1473435899033645,5.908871799998451,1.7839309374491374,\"[0.47606483226535995, 0.5400241165012521, 0.641582924359274]\",0.6523288467110093,0.5074490168515636,0.7629227380398635,0.8048710981336615,0.6310210420174654,56\n",
+  "divisao": {
+    "dimensoes_originais": [
+      106674,
+      18
+    ],
+    "n_treino_original": 85339,
+    "n_teste_original": 21335,
+    "n_treino": 84713,
+    "n_teste": 21126,
+    "n_excluidos": 835,
+    "inicio_teste": "2017-10-06 17:39:59+00:00",
+    "csv_sha256": "5097cbbbab8c4611a709b3cf95ac5c9fe5f62e619bab081911a2a247ddbed4e0",
+    "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+    "sha_compartilhados": 0,
+    "avaliacao_final": "Holdout já avaliado na versão inicial; reavaliação exploratória, não teste intocado."
+  }
+}

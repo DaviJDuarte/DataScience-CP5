@@ -1,0 +1,28 @@
+{
+  "modelo": "LightGBM",
+  "estrategia": "Optuna",
+  "parametros": {
+    "n_estimators": 250,
+    "learning_rate": 0.07902978859187117,
+    "num_leaves": 27,
+    "min_child_samples": 60
+  },
+  "f1_treino": 0.7320350337138573,
+  "f1_validacao": 0.5609011900928694,
+  "desvio_f1": 0.05152398863924956,
+  "gap": 0.17113384362098782,
+  "tempo_s": 73.30132,
+  "ajuste_medio_s": 0.8918654123942057,
+  "f1_folds": [
+    0.5132270255323071,
+    0.537015503875969,
+    0.6324610408703323
+  ],
+  "validacao_precision": 0.6549918805919953,
+  "validacao_recall": 0.5123488826536936,
+  "validacao_acuracia": 0.7640494475538807,
+  "validacao_roc_auc": 0.7997890196293569,
+  "validacao_average_precision": 0.6329992629156315,
+  "tempo_melhor_trial_s": 3.837681499993778,
+  "trials_completos": 20
+}

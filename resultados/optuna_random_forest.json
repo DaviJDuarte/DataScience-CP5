@@ -1,0 +1,28 @@
+{
+  "modelo": "Random Forest",
+  "estrategia": "Optuna",
+  "parametros": {
+    "n_estimators": 300,
+    "max_depth": null,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt"
+  },
+  "f1_treino": 0.9803034003790868,
+  "f1_validacao": 0.5549392809570063,
+  "desvio_f1": 0.047574797492210615,
+  "gap": 0.4253641194220805,
+  "tempo_s": 1388.175997,
+  "ajuste_medio_s": 10.338862101236979,
+  "f1_folds": [
+    0.5128663330950679,
+    0.5305066188912113,
+    0.6214448908847396
+  ],
+  "validacao_precision": 0.6565429173744223,
+  "validacao_recall": 0.4916542851872099,
+  "validacao_acuracia": 0.7651836912964919,
+  "validacao_roc_auc": 0.7928233108619395,
+  "validacao_average_precision": 0.6295632154944272,
+  "tempo_melhor_trial_s": 34.3205578999914,
+  "trials_completos": 20
+}

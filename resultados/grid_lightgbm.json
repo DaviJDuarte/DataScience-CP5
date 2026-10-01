@@ -1,0 +1,25 @@
+{
+  "modelo": "LightGBM",
+  "estrategia": "Grid Search",
+  "parametros": {
+    "learning_rate": 0.05,
+    "n_estimators": 300,
+    "num_leaves": 31
+  },
+  "f1_treino": 0.7231428228653375,
+  "f1_validacao": 0.5526318131156817,
+  "desvio_f1": 0.057524141451435674,
+  "gap": 0.17051100974965583,
+  "tempo_s": 26.313924800007953,
+  "ajuste_medio_s": 1.0578540166219075,
+  "f1_folds": [
+    0.5038752451209263,
+    0.520612951062778,
+    0.6334072431633407
+  ],
+  "validacao_precision": 0.657194137134565,
+  "validacao_recall": 0.4996854371907373,
+  "validacao_acuracia": 0.7630480937513463,
+  "validacao_roc_auc": 0.7986304835919613,
+  "validacao_average_precision": 0.6272340076257201
+}
