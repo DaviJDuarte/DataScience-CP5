@@ -10,7 +10,7 @@ e histórico dos arquivos alterados. Comparamos Random Forest, XGBoost e LightGB
 ## Links
 
 - **GitHub:** https://github.com/DaviJDuarte/DataScience-CP5
-- **Streamlit:** pendente de publicação
+- **Streamlit:** https://datascience-cp5-davi.streamlit.app/
 
 ## Integrantes
 
