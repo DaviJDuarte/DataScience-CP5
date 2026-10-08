@@ -1,0 +1,65 @@
+variavel,significado,ganho,ganho_pct,divisoes
+la,Linhas adicionadas,99449.51591587067,27.246439026880765,196
+d_churn,Total de linhas adicionadas e removidas,21124.14733839035,5.787436843203857,111
+l_arq_autores_max,Máximo de autores anteriores por arquivo,18518.695835113525,5.073614610206964,428
+d_atividade_autor_por_dia,Eventos anteriores do autor por dia de experiência (+1),14417.458174467087,3.9499880060304267,521
+m_caracteres,Caracteres da mensagem,13072.403745889664,3.581479993310958,404
+w_autor_frac_correcoes,Fração de mensagens anteriores do autor com indício de correção,11615.949656248093,3.1824515296385933,602
+l_arq_dias_desde_ultima_media,Intervalo médio desde a última mudança,10142.393946170807,2.7787376911388977,300
+m_linhas,Linhas da mensagem,9279.414561510086,2.542305015031109,170
+l_arq_idade_media_d,"Idade média do histórico dos arquivos, em dias",9123.587034702301,2.49961254771463,505
+l_arq_mudancas_max,Máximo de mudanças anteriores por arquivo,8521.771641016006,2.33473164026624,356
+l_arq_correcoes_max,Máximo de mensagens anteriores com indício de correção,8469.104058265686,2.320302167494208,373
+o_la_producao,Adições em Java de produção,8468.708356380463,2.3201937560334858,140
+d_mudancas_por_dia,Mudanças anteriores dos arquivos por dia de histórico (+1),8123.495466709137,2.2256148949590897,420
+o_frac_remocao,Fração de linhas removidas,7609.169790506363,2.084703769876562,308
+w_autor_dias_desde_primeiro,Dias desde primeiro evento do autor,7607.181392669678,2.084159003419737,483
+q_fuso_h,Fuso do autor em horas,7467.856501340866,2.0459878054852134,336
+o_ld_producao,Remoções em Java de produção,6782.508104562759,1.8582211468643524,153
+w_autor_commits,Eventos anteriores do autor na cadeia ancestral,6619.84453701973,1.813655791928836,398
+l_arq_frac_correcoes,Fração média de mensagens anteriores com indício de correção,6560.085528612137,1.7972834630754535,390
+m_palavras,Palavras da mensagem,6335.0677921772,1.735634776510426,168
+d_mudancas_por_autor,Mudanças médias dos arquivos por autor anterior (+1),6149.831705570221,1.6848851706140575,300
+m_assunto_caracteres,Caracteres do assunto,4658.468217134476,1.27629248938919,338
+o_max_la_arquivo,Maior adição em um arquivo,4367.288170814514,1.1965171450364573,120
+l_arq_autores_media,Média de autores anteriores por arquivo,4280.112648963928,1.1726334436542623,249
+w_autor_nas_pastas,Eventos anteriores do autor nas pastas,4192.127546548843,1.1485279394077212,234
+w_autor_dias_desde_ultimo,Dias desde último evento do autor,3273.3268377780914,0.8968017519162238,276
+d_fracao_java,Fração de arquivos Java,2919.8247640132904,0.7999518818086964,162
+ld,Linhas removidas,2776.699992418289,0.7607396209285294,114
+l_arq_correcoes_media,Média de mensagens anteriores com indício de correção,2585.173139333725,0.7082665176004704,176
+q_atraso_commit_h,Intervalo autoria-integração (horas),2561.665412425995,0.7018260453472533,154
+l_arq_dias_desde_ultima_min,Menor intervalo desde a última mudança,2534.572834968567,0.6944034223915084,216
+d_concentracao_adicoes,Fração das adições no arquivo com mais adições,2321.25967669487,0.6359614691350207,197
+d_fracao_atividade_recente,Eventos na última semana / experiência do autor (+1),2317.8407077789307,0.6350247654492859,192
+q_hora,Hora local de autoria,2174.2983181476593,0.5956980886842654,260
+l_arq_mudancas_media,Média de mudanças anteriores (arquivos conhecidos),2170.871345758438,0.5947591922664216,172
+o_frac_la_teste,Fração das adições em testes,2122.477754354477,0.5815006758690644,147
+d_palavras_por_linha,Palavras por linha da mensagem,2066.074921607971,0.5660478470722801,205
+d_churn_por_arquivo,Linhas alteradas por arquivo,2023.9038817882538,0.55449413909727,217
+o_n_pastas,Pastas distintas,1884.6522452831268,0.5163430109747366,76
+w_autor_commits_7d,Eventos anteriores do autor em sete dias,1875.355170249939,0.5137958674749695,120
+d_churn_por_arquivo_producao,Linhas alteradas por arquivo Java de produção,1679.4367032051086,0.4601195824029269,152
+d_experiencia_autor_por_arquivo,Mudanças anteriores do autor por arquivo afetado,1666.4686288833618,0.45656668580961984,160
+w_autor_nos_arquivos,Mudanças anteriores do autor nos arquivos,1479.6804239749908,0.4053918420800461,101
+d_churn_por_experiencia,Linhas alteradas / experiência anterior do autor (+1),1304.7527992725372,0.3574664719394371,136
+d_fracao_churn_producao,Fração das linhas alteradas em Java de produção,1222.445057630539,0.33491640878994844,106
+nf,Arquivos afetados,1185.0556693077087,0.324672742143525,47
+d_fracao_producao,Fração de arquivos Java de produção,1182.2779417037964,0.32391172098523896,81
+o_n_outros,Arquivos não Java,1061.261037826538,0.290756409344477,43
+w_autor_diferente_committer,Autor diferente do integrador,981.9998168945312,0.26904100929017255,34
+q_dia_semana,Dia da semana (segunda=0),687.8304314613342,0.18844666803102617,77
+d_arquivos_por_pasta,Arquivos alterados por pasta,658.7679209709167,0.18048433746809905,69
+o_n_producao,Arquivos Java fora de testes,645.070481300354,0.1767316147788898,37
+w_autor_frac_arquivos_conhecidos,Fração de arquivos já alterados pelo autor,618.2286088466644,0.1693776781162373,61
+d_fracao_testes,Fração de arquivos de teste,614.1739540100098,0.16826681392786444,55
+l_frac_arquivos_novos,Fração de arquivos sem histórico,404.75267219543457,0.11089112805002653,49
+o_n_java,Arquivos Java,320.8207001686096,0.08789607033482048,30
+o_n_teste,Arquivos de teste,261.81727027893066,0.07173074926653143,26
+o_n_extensoes,Extensões distintas,222.98150062561035,0.061090813816103415,19
+o_n_renomeados,Arquivos renomeados,132.30717062950134,0.036248534989606014,18
+q_madrugada,Entre 22h e 6h,46.62246036529541,0.012773275082613712,4
+l_n_arquivos_novos,Arquivos sem histórico anterior,46.35281038284302,0.012699398385097116,7
+q_fim_semana,Fim de semana,12.760700225830078,0.0034960817802019858,1
+o_tem_teste,Presença de teste,0.0,0.0,0
+o_n_binarios,Arquivos binários (alvos recusados),0.0,0.0,0

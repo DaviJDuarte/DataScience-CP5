@@ -1,0 +1,458 @@
+{
+  "modelo": "LightGBM",
+  "pipeline_sha256": "380e3ae6e03ab8439a49a694391afcc21d5c035b7ae26ea5fb3074100afe0054",
+  "caracteristicas": 64,
+  "arvores": 400,
+  "metrica": "gain: soma dos ganhos das divisões, normalizada pelas 64 características",
+  "fonte": "artefatos/melhorias/pipeline.joblib",
+  "ranking": [
+    {
+      "variavel": "la",
+      "significado": "Linhas adicionadas",
+      "ganho": 99449.51591587067,
+      "ganho_pct": 27.246439026880765,
+      "divisoes": 196
+    },
+    {
+      "variavel": "d_churn",
+      "significado": "Total de linhas adicionadas e removidas",
+      "ganho": 21124.14733839035,
+      "ganho_pct": 5.787436843203857,
+      "divisoes": 111
+    },
+    {
+      "variavel": "l_arq_autores_max",
+      "significado": "Máximo de autores anteriores por arquivo",
+      "ganho": 18518.695835113525,
+      "ganho_pct": 5.073614610206964,
+      "divisoes": 428
+    },
+    {
+      "variavel": "d_atividade_autor_por_dia",
+      "significado": "Eventos anteriores do autor por dia de experiência (+1)",
+      "ganho": 14417.458174467087,
+      "ganho_pct": 3.9499880060304267,
+      "divisoes": 521
+    },
+    {
+      "variavel": "m_caracteres",
+      "significado": "Caracteres da mensagem",
+      "ganho": 13072.403745889664,
+      "ganho_pct": 3.581479993310958,
+      "divisoes": 404
+    },
+    {
+      "variavel": "w_autor_frac_correcoes",
+      "significado": "Fração de mensagens anteriores do autor com indício de correção",
+      "ganho": 11615.949656248093,
+      "ganho_pct": 3.1824515296385933,
+      "divisoes": 602
+    },
+    {
+      "variavel": "l_arq_dias_desde_ultima_media",
+      "significado": "Intervalo médio desde a última mudança",
+      "ganho": 10142.393946170807,
+      "ganho_pct": 2.7787376911388977,
+      "divisoes": 300
+    },
+    {
+      "variavel": "m_linhas",
+      "significado": "Linhas da mensagem",
+      "ganho": 9279.414561510086,
+      "ganho_pct": 2.542305015031109,
+      "divisoes": 170
+    },
+    {
+      "variavel": "l_arq_idade_media_d",
+      "significado": "Idade média do histórico dos arquivos, em dias",
+      "ganho": 9123.587034702301,
+      "ganho_pct": 2.49961254771463,
+      "divisoes": 505
+    },
+    {
+      "variavel": "l_arq_mudancas_max",
+      "significado": "Máximo de mudanças anteriores por arquivo",
+      "ganho": 8521.771641016006,
+      "ganho_pct": 2.33473164026624,
+      "divisoes": 356
+    },
+    {
+      "variavel": "l_arq_correcoes_max",
+      "significado": "Máximo de mensagens anteriores com indício de correção",
+      "ganho": 8469.104058265686,
+      "ganho_pct": 2.320302167494208,
+      "divisoes": 373
+    },
+    {
+      "variavel": "o_la_producao",
+      "significado": "Adições em Java de produção",
+      "ganho": 8468.708356380463,
+      "ganho_pct": 2.3201937560334858,
+      "divisoes": 140
+    },
+    {
+      "variavel": "d_mudancas_por_dia",
+      "significado": "Mudanças anteriores dos arquivos por dia de histórico (+1)",
+      "ganho": 8123.495466709137,
+      "ganho_pct": 2.2256148949590897,
+      "divisoes": 420
+    },
+    {
+      "variavel": "o_frac_remocao",
+      "significado": "Fração de linhas removidas",
+      "ganho": 7609.169790506363,
+      "ganho_pct": 2.084703769876562,
+      "divisoes": 308
+    },
+    {
+      "variavel": "w_autor_dias_desde_primeiro",
+      "significado": "Dias desde primeiro evento do autor",
+      "ganho": 7607.181392669678,
+      "ganho_pct": 2.084159003419737,
+      "divisoes": 483
+    },
+    {
+      "variavel": "q_fuso_h",
+      "significado": "Fuso do autor em horas",
+      "ganho": 7467.856501340866,
+      "ganho_pct": 2.0459878054852134,
+      "divisoes": 336
+    },
+    {
+      "variavel": "o_ld_producao",
+      "significado": "Remoções em Java de produção",
+      "ganho": 6782.508104562759,
+      "ganho_pct": 1.8582211468643524,
+      "divisoes": 153
+    },
+    {
+      "variavel": "w_autor_commits",
+      "significado": "Eventos anteriores do autor na cadeia ancestral",
+      "ganho": 6619.84453701973,
+      "ganho_pct": 1.813655791928836,
+      "divisoes": 398
+    },
+    {
+      "variavel": "l_arq_frac_correcoes",
+      "significado": "Fração média de mensagens anteriores com indício de correção",
+      "ganho": 6560.085528612137,
+      "ganho_pct": 1.7972834630754535,
+      "divisoes": 390
+    },
+    {
+      "variavel": "m_palavras",
+      "significado": "Palavras da mensagem",
+      "ganho": 6335.0677921772,
+      "ganho_pct": 1.735634776510426,
+      "divisoes": 168
+    },
+    {
+      "variavel": "d_mudancas_por_autor",
+      "significado": "Mudanças médias dos arquivos por autor anterior (+1)",
+      "ganho": 6149.831705570221,
+      "ganho_pct": 1.6848851706140575,
+      "divisoes": 300
+    },
+    {
+      "variavel": "m_assunto_caracteres",
+      "significado": "Caracteres do assunto",
+      "ganho": 4658.468217134476,
+      "ganho_pct": 1.27629248938919,
+      "divisoes": 338
+    },
+    {
+      "variavel": "o_max_la_arquivo",
+      "significado": "Maior adição em um arquivo",
+      "ganho": 4367.288170814514,
+      "ganho_pct": 1.1965171450364573,
+      "divisoes": 120
+    },
+    {
+      "variavel": "l_arq_autores_media",
+      "significado": "Média de autores anteriores por arquivo",
+      "ganho": 4280.112648963928,
+      "ganho_pct": 1.1726334436542623,
+      "divisoes": 249
+    },
+    {
+      "variavel": "w_autor_nas_pastas",
+      "significado": "Eventos anteriores do autor nas pastas",
+      "ganho": 4192.127546548843,
+      "ganho_pct": 1.1485279394077212,
+      "divisoes": 234
+    },
+    {
+      "variavel": "w_autor_dias_desde_ultimo",
+      "significado": "Dias desde último evento do autor",
+      "ganho": 3273.3268377780914,
+      "ganho_pct": 0.8968017519162238,
+      "divisoes": 276
+    },
+    {
+      "variavel": "d_fracao_java",
+      "significado": "Fração de arquivos Java",
+      "ganho": 2919.8247640132904,
+      "ganho_pct": 0.7999518818086964,
+      "divisoes": 162
+    },
+    {
+      "variavel": "ld",
+      "significado": "Linhas removidas",
+      "ganho": 2776.699992418289,
+      "ganho_pct": 0.7607396209285294,
+      "divisoes": 114
+    },
+    {
+      "variavel": "l_arq_correcoes_media",
+      "significado": "Média de mensagens anteriores com indício de correção",
+      "ganho": 2585.173139333725,
+      "ganho_pct": 0.7082665176004704,
+      "divisoes": 176
+    },
+    {
+      "variavel": "q_atraso_commit_h",
+      "significado": "Intervalo autoria-integração (horas)",
+      "ganho": 2561.665412425995,
+      "ganho_pct": 0.7018260453472533,
+      "divisoes": 154
+    },
+    {
+      "variavel": "l_arq_dias_desde_ultima_min",
+      "significado": "Menor intervalo desde a última mudança",
+      "ganho": 2534.572834968567,
+      "ganho_pct": 0.6944034223915084,
+      "divisoes": 216
+    },
+    {
+      "variavel": "d_concentracao_adicoes",
+      "significado": "Fração das adições no arquivo com mais adições",
+      "ganho": 2321.25967669487,
+      "ganho_pct": 0.6359614691350207,
+      "divisoes": 197
+    },
+    {
+      "variavel": "d_fracao_atividade_recente",
+      "significado": "Eventos na última semana / experiência do autor (+1)",
+      "ganho": 2317.8407077789307,
+      "ganho_pct": 0.6350247654492859,
+      "divisoes": 192
+    },
+    {
+      "variavel": "q_hora",
+      "significado": "Hora local de autoria",
+      "ganho": 2174.2983181476593,
+      "ganho_pct": 0.5956980886842654,
+      "divisoes": 260
+    },
+    {
+      "variavel": "l_arq_mudancas_media",
+      "significado": "Média de mudanças anteriores (arquivos conhecidos)",
+      "ganho": 2170.871345758438,
+      "ganho_pct": 0.5947591922664216,
+      "divisoes": 172
+    },
+    {
+      "variavel": "o_frac_la_teste",
+      "significado": "Fração das adições em testes",
+      "ganho": 2122.477754354477,
+      "ganho_pct": 0.5815006758690644,
+      "divisoes": 147
+    },
+    {
+      "variavel": "d_palavras_por_linha",
+      "significado": "Palavras por linha da mensagem",
+      "ganho": 2066.074921607971,
+      "ganho_pct": 0.5660478470722801,
+      "divisoes": 205
+    },
+    {
+      "variavel": "d_churn_por_arquivo",
+      "significado": "Linhas alteradas por arquivo",
+      "ganho": 2023.9038817882538,
+      "ganho_pct": 0.55449413909727,
+      "divisoes": 217
+    },
+    {
+      "variavel": "o_n_pastas",
+      "significado": "Pastas distintas",
+      "ganho": 1884.6522452831268,
+      "ganho_pct": 0.5163430109747366,
+      "divisoes": 76
+    },
+    {
+      "variavel": "w_autor_commits_7d",
+      "significado": "Eventos anteriores do autor em sete dias",
+      "ganho": 1875.355170249939,
+      "ganho_pct": 0.5137958674749695,
+      "divisoes": 120
+    },
+    {
+      "variavel": "d_churn_por_arquivo_producao",
+      "significado": "Linhas alteradas por arquivo Java de produção",
+      "ganho": 1679.4367032051086,
+      "ganho_pct": 0.4601195824029269,
+      "divisoes": 152
+    },
+    {
+      "variavel": "d_experiencia_autor_por_arquivo",
+      "significado": "Mudanças anteriores do autor por arquivo afetado",
+      "ganho": 1666.4686288833618,
+      "ganho_pct": 0.45656668580961984,
+      "divisoes": 160
+    },
+    {
+      "variavel": "w_autor_nos_arquivos",
+      "significado": "Mudanças anteriores do autor nos arquivos",
+      "ganho": 1479.6804239749908,
+      "ganho_pct": 0.4053918420800461,
+      "divisoes": 101
+    },
+    {
+      "variavel": "d_churn_por_experiencia",
+      "significado": "Linhas alteradas / experiência anterior do autor (+1)",
+      "ganho": 1304.7527992725372,
+      "ganho_pct": 0.3574664719394371,
+      "divisoes": 136
+    },
+    {
+      "variavel": "d_fracao_churn_producao",
+      "significado": "Fração das linhas alteradas em Java de produção",
+      "ganho": 1222.445057630539,
+      "ganho_pct": 0.33491640878994844,
+      "divisoes": 106
+    },
+    {
+      "variavel": "nf",
+      "significado": "Arquivos afetados",
+      "ganho": 1185.0556693077087,
+      "ganho_pct": 0.324672742143525,
+      "divisoes": 47
+    },
+    {
+      "variavel": "d_fracao_producao",
+      "significado": "Fração de arquivos Java de produção",
+      "ganho": 1182.2779417037964,
+      "ganho_pct": 0.32391172098523896,
+      "divisoes": 81
+    },
+    {
+      "variavel": "o_n_outros",
+      "significado": "Arquivos não Java",
+      "ganho": 1061.261037826538,
+      "ganho_pct": 0.290756409344477,
+      "divisoes": 43
+    },
+    {
+      "variavel": "w_autor_diferente_committer",
+      "significado": "Autor diferente do integrador",
+      "ganho": 981.9998168945312,
+      "ganho_pct": 0.26904100929017255,
+      "divisoes": 34
+    },
+    {
+      "variavel": "q_dia_semana",
+      "significado": "Dia da semana (segunda=0)",
+      "ganho": 687.8304314613342,
+      "ganho_pct": 0.18844666803102617,
+      "divisoes": 77
+    },
+    {
+      "variavel": "d_arquivos_por_pasta",
+      "significado": "Arquivos alterados por pasta",
+      "ganho": 658.7679209709167,
+      "ganho_pct": 0.18048433746809905,
+      "divisoes": 69
+    },
+    {
+      "variavel": "o_n_producao",
+      "significado": "Arquivos Java fora de testes",
+      "ganho": 645.070481300354,
+      "ganho_pct": 0.1767316147788898,
+      "divisoes": 37
+    },
+    {
+      "variavel": "w_autor_frac_arquivos_conhecidos",
+      "significado": "Fração de arquivos já alterados pelo autor",
+      "ganho": 618.2286088466644,
+      "ganho_pct": 0.1693776781162373,
+      "divisoes": 61
+    },
+    {
+      "variavel": "d_fracao_testes",
+      "significado": "Fração de arquivos de teste",
+      "ganho": 614.1739540100098,
+      "ganho_pct": 0.16826681392786444,
+      "divisoes": 55
+    },
+    {
+      "variavel": "l_frac_arquivos_novos",
+      "significado": "Fração de arquivos sem histórico",
+      "ganho": 404.75267219543457,
+      "ganho_pct": 0.11089112805002653,
+      "divisoes": 49
+    },
+    {
+      "variavel": "o_n_java",
+      "significado": "Arquivos Java",
+      "ganho": 320.8207001686096,
+      "ganho_pct": 0.08789607033482048,
+      "divisoes": 30
+    },
+    {
+      "variavel": "o_n_teste",
+      "significado": "Arquivos de teste",
+      "ganho": 261.81727027893066,
+      "ganho_pct": 0.07173074926653143,
+      "divisoes": 26
+    },
+    {
+      "variavel": "o_n_extensoes",
+      "significado": "Extensões distintas",
+      "ganho": 222.98150062561035,
+      "ganho_pct": 0.061090813816103415,
+      "divisoes": 19
+    },
+    {
+      "variavel": "o_n_renomeados",
+      "significado": "Arquivos renomeados",
+      "ganho": 132.30717062950134,
+      "ganho_pct": 0.036248534989606014,
+      "divisoes": 18
+    },
+    {
+      "variavel": "q_madrugada",
+      "significado": "Entre 22h e 6h",
+      "ganho": 46.62246036529541,
+      "ganho_pct": 0.012773275082613712,
+      "divisoes": 4
+    },
+    {
+      "variavel": "l_n_arquivos_novos",
+      "significado": "Arquivos sem histórico anterior",
+      "ganho": 46.35281038284302,
+      "ganho_pct": 0.012699398385097116,
+      "divisoes": 7
+    },
+    {
+      "variavel": "q_fim_semana",
+      "significado": "Fim de semana",
+      "ganho": 12.760700225830078,
+      "ganho_pct": 0.0034960817802019858,
+      "divisoes": 1
+    },
+    {
+      "variavel": "o_tem_teste",
+      "significado": "Presença de teste",
+      "ganho": 0.0,
+      "ganho_pct": 0.0,
+      "divisoes": 0
+    },
+    {
+      "variavel": "o_n_binarios",
+      "significado": "Arquivos binários (alvos recusados)",
+      "ganho": 0.0,
+      "ganho_pct": 0.0,
+      "divisoes": 0
+    }
+  ]
+}
