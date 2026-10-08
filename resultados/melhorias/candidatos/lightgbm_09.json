@@ -1,0 +1,150 @@
+{
+  "config": {
+    "id": "lightgbm_09",
+    "tipo": "optuna",
+    "modelo": "LightGBM",
+    "pistas": "razoes",
+    "pesos": "balanced",
+    "parametros": {
+      "n_estimators": 800,
+      "learning_rate": 0.11390989435477142,
+      "reg_alpha": 2.8223694515444877,
+      "reg_lambda": 6.956626736598459,
+      "subsample": 0.9090051995254007,
+      "colsample_bytree": 0.9447374781199855,
+      "num_leaves": 31,
+      "min_child_samples": 350,
+      "min_split_gain": 0.4968133936641526,
+      "subsample_freq": 1
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "limiar": 0.47,
+      "f1": 0.6011126363702045,
+      "precision": 0.6144756277695717,
+      "recall": 0.5883184839485222,
+      "acuracia": 0.73019596344622,
+      "acuracia_balanceada": 0.6967130054151213,
+      "roc_auc": 0.7745608229179815,
+      "average_precision": 0.6516878989887827,
+      "n_ajuste_interno": 16128,
+      "n_validacao_interna": 4038,
+      "n_treino": 20166,
+      "fim_ajuste_interno": "2010-06-25 05:38:24+00:00",
+      "inicio_validacao_interna": "2010-06-25 05:47:02+00:00",
+      "fim_treino": "2011-03-21 23:56:35+00:00",
+      "contagens_por_fit": [
+        {
+          "0": 12627,
+          "1": 3501
+        },
+        {
+          "0": 15201,
+          "1": 4965
+        }
+      ],
+      "pesos_por_fit": [
+        {
+          "0": 0.6386315039201711,
+          "1": 2.303341902313625
+        },
+        {
+          "0": 0.6633116242352477,
+          "1": 2.0308157099697883
+        }
+      ],
+      "n_validacao": 20463,
+      "inicio_validacao": "2011-03-22 00:22:04+00:00",
+      "fim_validacao": "2014-02-21 10:56:47+00:00"
+    },
+    {
+      "fold": 2,
+      "limiar": 0.42,
+      "f1": 0.5842399294325199,
+      "precision": 0.5200209369275058,
+      "recall": 0.6665548473666555,
+      "acuracia": 0.739090321985423,
+      "acuracia_balanceada": 0.7165810632862801,
+      "roc_auc": 0.7889357420957999,
+      "average_precision": 0.5773828996894806,
+      "n_ajuste_interno": 32402,
+      "n_validacao_interna": 8227,
+      "n_treino": 40629,
+      "fim_ajuste_interno": "2012-12-18 12:02:26+00:00",
+      "inicio_validacao_interna": "2012-12-18 12:53:39+00:00",
+      "fim_treino": "2014-02-21 10:56:47+00:00",
+      "contagens_por_fit": [
+        {
+          "0": 23386,
+          "1": 9016
+        },
+        {
+          "0": 28593,
+          "1": 12036
+        }
+      ],
+      "pesos_por_fit": [
+        {
+          "0": 0.6927649020781664,
+          "1": 1.7969165927240462
+        },
+        {
+          "0": 0.7104710943237855,
+          "1": 1.6878115653040877
+        }
+      ],
+      "n_validacao": 21678,
+      "inicio_validacao": "2014-02-21 11:26:01+00:00",
+      "fim_validacao": "2015-09-10 07:34:24+00:00"
+    },
+    {
+      "fold": 3,
+      "limiar": 0.48,
+      "f1": 0.6339622641509434,
+      "precision": 0.5271966527196653,
+      "recall": 0.7949526813880127,
+      "acuracia": 0.7330152759300885,
+      "acuracia_balanceada": 0.7512831846037029,
+      "roc_auc": 0.8243878128428858,
+      "average_precision": 0.64476496641381,
+      "n_ajuste_interno": 49502,
+      "n_validacao_interna": 12805,
+      "n_treino": 62307,
+      "fim_ajuste_interno": "2014-10-31 15:02:03+00:00",
+      "inicio_validacao_interna": "2014-10-31 15:44:40+00:00",
+      "fim_treino": "2015-09-10 07:34:24+00:00",
+      "contagens_por_fit": [
+        {
+          "0": 35188,
+          "1": 14314
+        },
+        {
+          "0": 44309,
+          "1": 17998
+        }
+      ],
+      "pesos_por_fit": [
+        {
+          "0": 0.7033932022280323,
+          "1": 1.7291462903451167
+        },
+        {
+          "0": 0.7030964363898982,
+          "1": 1.730942326925214
+        }
+      ],
+      "n_validacao": 21799,
+      "inicio_validacao": "2015-09-10 07:42:01+00:00",
+      "fim_validacao": "2017-10-06 17:12:24+00:00"
+    }
+  ],
+  "tempo_s": 18.222652400028892,
+  "f1_validacao": 0.6064382766512226,
+  "desvio_f1": 0.020645410721107597,
+  "precision": 0.5538977391389143,
+  "recall": 0.6832753375677302,
+  "average_precision": 0.6246119216973577,
+  "roc_auc": 0.7959614592855556
+}

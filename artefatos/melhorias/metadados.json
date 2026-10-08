@@ -1,0 +1,458 @@
+{
+  "modelo": "LightGBM",
+  "estrategia": "Busca ampliada de pistas e regularização",
+  "parametros": {
+    "n_estimators": 400,
+    "learning_rate": 0.05572633831152022,
+    "reg_alpha": 4.268407710065496,
+    "reg_lambda": 0.5595986878006082,
+    "subsample": 0.7936340230624704,
+    "colsample_bytree": 0.914442898490067,
+    "num_leaves": 31,
+    "min_child_samples": 500,
+    "min_split_gain": 0.4040601897822085,
+    "subsample_freq": 1
+  },
+  "variaveis": [
+    "la",
+    "ld",
+    "nf",
+    "o_n_java",
+    "o_n_teste",
+    "o_n_producao",
+    "o_n_outros",
+    "o_tem_teste",
+    "o_frac_la_teste",
+    "o_la_producao",
+    "o_ld_producao",
+    "o_n_extensoes",
+    "o_n_pastas",
+    "o_n_binarios",
+    "o_n_renomeados",
+    "o_max_la_arquivo",
+    "o_frac_remocao",
+    "q_hora",
+    "q_dia_semana",
+    "q_fim_semana",
+    "q_madrugada",
+    "q_fuso_h",
+    "q_atraso_commit_h",
+    "m_caracteres",
+    "m_palavras",
+    "m_linhas",
+    "m_assunto_caracteres",
+    "w_autor_diferente_committer",
+    "w_autor_commits",
+    "w_autor_dias_desde_primeiro",
+    "w_autor_dias_desde_ultimo",
+    "w_autor_commits_7d",
+    "w_autor_nos_arquivos",
+    "w_autor_frac_arquivos_conhecidos",
+    "w_autor_nas_pastas",
+    "w_autor_frac_correcoes",
+    "l_n_arquivos_novos",
+    "l_frac_arquivos_novos",
+    "l_arq_mudancas_max",
+    "l_arq_mudancas_media",
+    "l_arq_idade_media_d",
+    "l_arq_dias_desde_ultima_min",
+    "l_arq_dias_desde_ultima_media",
+    "l_arq_autores_max",
+    "l_arq_autores_media",
+    "l_arq_correcoes_max",
+    "l_arq_correcoes_media",
+    "l_arq_frac_correcoes"
+  ],
+  "limiar": 0.71,
+  "f1_validacao": 0.6167558902667927,
+  "desvio_f1": 0.01939811374491391,
+  "regra": "Maior F1 médio; menor desvio; menos pistas; menos árvores.",
+  "versoes": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "optuna": "5.0.0",
+    "streamlit": "1.64.0",
+    "matplotlib": "3.11.2",
+    "requests": "2.34.2",
+    "joblib": "1.6.0",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0",
+    "immutables": "0.21",
+    "pyarrow": "25.0.1"
+  },
+  "python": "3.13.3",
+  "versao_extrator": "ancestral-primeiro-pai-v1",
+  "descricoes": {
+    "la": "Linhas adicionadas",
+    "ld": "Linhas removidas",
+    "nf": "Arquivos afetados",
+    "o_n_java": "Arquivos Java",
+    "o_n_teste": "Arquivos de teste",
+    "o_n_producao": "Arquivos Java fora de testes",
+    "o_n_outros": "Arquivos não Java",
+    "o_tem_teste": "Presença de teste",
+    "o_frac_la_teste": "Fração das adições em testes",
+    "o_la_producao": "Adições em Java de produção",
+    "o_ld_producao": "Remoções em Java de produção",
+    "o_n_extensoes": "Extensões distintas",
+    "o_n_pastas": "Pastas distintas",
+    "o_n_binarios": "Arquivos binários (alvos recusados)",
+    "o_n_renomeados": "Arquivos renomeados",
+    "o_max_la_arquivo": "Maior adição em um arquivo",
+    "o_frac_remocao": "Fração de linhas removidas",
+    "q_hora": "Hora local de autoria",
+    "q_dia_semana": "Dia da semana (segunda=0)",
+    "q_fim_semana": "Fim de semana",
+    "q_madrugada": "Entre 22h e 6h",
+    "q_fuso_h": "Fuso do autor em horas",
+    "q_atraso_commit_h": "Intervalo autoria-integração (horas)",
+    "m_caracteres": "Caracteres da mensagem",
+    "m_palavras": "Palavras da mensagem",
+    "m_linhas": "Linhas da mensagem",
+    "m_assunto_caracteres": "Caracteres do assunto",
+    "w_autor_diferente_committer": "Autor diferente do integrador",
+    "w_autor_commits": "Eventos anteriores do autor na cadeia ancestral",
+    "w_autor_dias_desde_primeiro": "Dias desde primeiro evento do autor",
+    "w_autor_dias_desde_ultimo": "Dias desde último evento do autor",
+    "w_autor_commits_7d": "Eventos anteriores do autor em sete dias",
+    "w_autor_nos_arquivos": "Mudanças anteriores do autor nos arquivos",
+    "w_autor_frac_arquivos_conhecidos": "Fração de arquivos já alterados pelo autor",
+    "w_autor_nas_pastas": "Eventos anteriores do autor nas pastas",
+    "w_autor_frac_correcoes": "Fração de mensagens anteriores do autor com indício de correção",
+    "l_n_arquivos_novos": "Arquivos sem histórico anterior",
+    "l_frac_arquivos_novos": "Fração de arquivos sem histórico",
+    "l_arq_mudancas_max": "Máximo de mudanças anteriores por arquivo",
+    "l_arq_mudancas_media": "Média de mudanças anteriores (arquivos conhecidos)",
+    "l_arq_idade_media_d": "Idade média do histórico dos arquivos, em dias",
+    "l_arq_dias_desde_ultima_min": "Menor intervalo desde a última mudança",
+    "l_arq_dias_desde_ultima_media": "Intervalo médio desde a última mudança",
+    "l_arq_autores_max": "Máximo de autores anteriores por arquivo",
+    "l_arq_autores_media": "Média de autores anteriores por arquivo",
+    "l_arq_correcoes_max": "Máximo de mensagens anteriores com indício de correção",
+    "l_arq_correcoes_media": "Média de mensagens anteriores com indício de correção",
+    "l_arq_frac_correcoes": "Fração média de mensagens anteriores com indício de correção"
+  },
+  "entrada": {
+    "la": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "ld": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "nf": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_n_java": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_n_teste": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_n_producao": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_n_outros": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_tem_teste": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_frac_la_teste": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_la_producao": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_ld_producao": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_n_extensoes": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_n_pastas": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_n_binarios": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_n_renomeados": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_max_la_arquivo": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "o_frac_remocao": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "q_hora": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "q_dia_semana": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "q_fim_semana": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "q_madrugada": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "q_fuso_h": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": true
+    },
+    "q_atraso_commit_h": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "m_caracteres": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "m_palavras": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "m_linhas": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "m_assunto_caracteres": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "w_autor_diferente_committer": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "w_autor_commits": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "w_autor_dias_desde_primeiro": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": true
+    },
+    "w_autor_dias_desde_ultimo": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": true
+    },
+    "w_autor_commits_7d": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "w_autor_nos_arquivos": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "w_autor_frac_arquivos_conhecidos": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "w_autor_nas_pastas": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "w_autor_frac_correcoes": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "l_n_arquivos_novos": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "l_frac_arquivos_novos": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "l_arq_mudancas_max": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "l_arq_mudancas_media": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "l_arq_idade_media_d": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": true
+    },
+    "l_arq_dias_desde_ultima_min": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": true
+    },
+    "l_arq_dias_desde_ultima_media": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": true
+    },
+    "l_arq_autores_max": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "l_arq_autores_media": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "l_arq_correcoes_max": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "l_arq_correcoes_media": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    },
+    "l_arq_frac_correcoes": {
+      "tipo": "numerico",
+      "aceita_sentinela_menos_um": false
+    }
+  },
+  "divisao": {
+    "dimensoes_originais": [
+      106674,
+      18
+    ],
+    "n_treino_original": 84728,
+    "n_teste_original": 21946,
+    "n_treino": 84106,
+    "n_teste": 11292,
+    "ordenacao": "committer_date Git (integração)",
+    "n_treino_por_autoria_antes_filtro": 85339,
+    "autoria_antes_integracao_depois_corte": 612,
+    "n_excluidos": 835,
+    "inicio_teste": "2017-10-06 17:39:59+00:00",
+    "csv_sha256": "5097cbbbab8c4611a709b3cf95ac5c9fe5f62e619bab081911a2a247ddbed4e0",
+    "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+    "sha_compartilhados": 0,
+    "avaliacao_final": "Holdout já avaliado na versão inicial; reavaliação exploratória, não teste intocado.",
+    "n_sensibilidade_2019": 10441
+  },
+  "modelo_ajustado_apenas_no_treino": true,
+  "pipeline_sha256": "380e3ae6e03ab8439a49a694391afcc21d5c035b7ae26ea5fb3074100afe0054",
+  "score": "Estimativa do modelo; probabilidade não calibrada.",
+  "id": "lightgbm_06",
+  "tipo": "optuna",
+  "pistas": "razoes",
+  "pesos": "balanced",
+  "ajuste_final": {
+    "n_ajuste_interno": 66620,
+    "n_validacao_interna": 17486,
+    "n_treino": 84106,
+    "fim_ajuste_interno": "2016-02-12 11:30:08+00:00",
+    "inicio_validacao_interna": "2016-02-12 11:45:12+00:00",
+    "fim_treino": "2017-10-06 17:12:24+00:00",
+    "contagens_por_fit": [
+      {
+        "0": 47211,
+        "1": 19409
+      },
+      {
+        "0": 59768,
+        "1": 24338
+      }
+    ],
+    "pesos_por_fit": [
+      {
+        "0": 0.7055559085806274,
+        "1": 1.7162141274666391
+      },
+      {
+        "0": 0.7036039352161692,
+        "1": 1.7278741063357712
+      }
+    ]
+  },
+  "assinatura_melhorias": "15f8db867ea407f2ed4302075f2c680a33c17b12c453b0f1f9b288895872b563",
+  "variaveis_modelo": [
+    "la",
+    "ld",
+    "nf",
+    "o_n_java",
+    "o_n_teste",
+    "o_n_producao",
+    "o_n_outros",
+    "o_tem_teste",
+    "o_frac_la_teste",
+    "o_la_producao",
+    "o_ld_producao",
+    "o_n_extensoes",
+    "o_n_pastas",
+    "o_n_binarios",
+    "o_n_renomeados",
+    "o_max_la_arquivo",
+    "o_frac_remocao",
+    "q_hora",
+    "q_dia_semana",
+    "q_fim_semana",
+    "q_madrugada",
+    "q_fuso_h",
+    "q_atraso_commit_h",
+    "m_caracteres",
+    "m_palavras",
+    "m_linhas",
+    "m_assunto_caracteres",
+    "w_autor_diferente_committer",
+    "w_autor_commits",
+    "w_autor_dias_desde_primeiro",
+    "w_autor_dias_desde_ultimo",
+    "w_autor_commits_7d",
+    "w_autor_nos_arquivos",
+    "w_autor_frac_arquivos_conhecidos",
+    "w_autor_nas_pastas",
+    "w_autor_frac_correcoes",
+    "l_n_arquivos_novos",
+    "l_frac_arquivos_novos",
+    "l_arq_mudancas_max",
+    "l_arq_mudancas_media",
+    "l_arq_idade_media_d",
+    "l_arq_dias_desde_ultima_min",
+    "l_arq_dias_desde_ultima_media",
+    "l_arq_autores_max",
+    "l_arq_autores_media",
+    "l_arq_correcoes_max",
+    "l_arq_correcoes_media",
+    "l_arq_frac_correcoes",
+    "d_churn",
+    "d_churn_por_arquivo",
+    "d_fracao_java",
+    "d_fracao_testes",
+    "d_fracao_producao",
+    "d_fracao_churn_producao",
+    "d_churn_por_arquivo_producao",
+    "d_concentracao_adicoes",
+    "d_arquivos_por_pasta",
+    "d_experiencia_autor_por_arquivo",
+    "d_mudancas_por_autor",
+    "d_atividade_autor_por_dia",
+    "d_fracao_atividade_recente",
+    "d_churn_por_experiencia",
+    "d_mudancas_por_dia",
+    "d_palavras_por_linha"
+  ],
+  "novas_pistas_sha256": "85a8f5ad87411c494aba90edc54c0b12fa5c6ea90810d0bf046668e8828b8038",
+  "extracao_dispersao_sha256": "dbba4c48dd1295e96de80607962386173827dbde534657c9f0ed4c99e0d6f139",
+  "resultado_avaliacao": "resultados/melhorias/teste_final.json"
+}

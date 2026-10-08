@@ -4,10 +4,11 @@ import os
 import pandas as pd
 import streamlit as st
 from esquema import ROOT, FEATURES, DESCRICOES, GRUPOS
-from modelo import carregar_modelo, prever
+from modelo import carregar_modelo, prever, pasta_artefatos
 from github_api import repositorio, listar_commits, consultar, ErroGitHub
 from extracao import ExtracaoIncompativel
 from repositorios import caminho_repo, obter_repo, metricas_github
+from novas_pistas import ESTATICAS, DERIVADAS
 
 st.set_page_config(page_title="Risco de commits · modelo completo",page_icon="🔎",layout="centered")
 
@@ -17,7 +18,7 @@ def modelo_cache(): return carregar_modelo()
 
 
 @st.cache_data
-def exemplos_cache(): return pd.read_csv(ROOT/"artefatos/exemplos.csv")
+def exemplos_cache(): return pd.read_csv(pasta_artefatos()/"exemplos.csv")
 
 
 @st.cache_data(ttl=300,show_spinner=False)
@@ -25,7 +26,7 @@ def listar_cache(repo,pagina,token): return listar_commits(repo,pagina,token)
 
 
 @st.cache_data(ttl=3600,show_spinner=False)
-def extrair_cache(repo,sha,token): return metricas_github(repo,sha,token)
+def extrair_cache(repo,sha,token,dispersao): return metricas_github(repo,sha,token,dispersao=dispersao)
 
 
 def token_opcional():
@@ -34,11 +35,12 @@ def token_opcional():
 
 
 def mostrar(pipeline,registro,real=None,esperado=None,link=None):
-    resultado=prever(pipeline,pd.DataFrame([{f:registro[f] for f in FEATURES}])).iloc[0]
+    resultado=prever(pipeline,pd.DataFrame([{f:registro[f] for f in meta['variaveis']}])).iloc[0]
     score=float(resultado.score); classe=int(resultado.previsao)
     st.metric("Score de risco",f"{score:.6f}")
     st.write("**Priorizar revisão (1)**" if classe else "**Menor prioridade pelo modelo (0)**")
-    st.caption("Limiar fixo: 0,5. O score não é uma probabilidade calibrada; classe 0 não garante código correto.")
+    st.caption(f"Limiar de alerta: {meta['limiar']:.2f}. O score não é uma probabilidade calibrada; "
+               "classe 0 não garante código correto.")
     a,b,c=st.columns(3)
     a.metric("Linhas adicionadas",f"{registro['la']:,.0f}")
     b.metric("Linhas removidas",f"{registro['ld']:,.0f}")
@@ -54,11 +56,17 @@ def mostrar(pipeline,registro,real=None,esperado=None,link=None):
             st.success("Paridade confirmada: classe e score coincidem com o notebook.")
         else: st.error("Divergência em relação ao resultado salvo.")
     if link: st.link_button("Abrir commit no GitHub",link)
-    with st.expander("Ver as 48 entradas utilizadas"):
+    with st.expander(f"Ver as {len(meta['variaveis'])} entradas utilizadas"):
+        grupos = {**GRUPOS, **({'Dispersão da alteração': ESTATICAS} if 'n_entropia' in meta['variaveis'] else {})}
         tabela=pd.DataFrame([{"Grupo":g,"Variável":f,"Descrição":desc,"Valor":float(registro[f])}
-                            for g,grupo in GRUPOS.items() for f,desc in grupo.items()])
+                            for g,grupo in grupos.items() for f,desc in grupo.items()])
         st.dataframe(tabela,hide_index=True,width="stretch")
-    path=ROOT/"artefatos/faixas.csv"
+        if 'pistas' in pipeline.named_steps:
+            derivadas = pipeline.named_steps['pistas'].transform(pd.DataFrame([{f: registro[f] for f in meta['variaveis']}]))
+            st.caption('O modelo também calcula estas razões a partir das entradas acima:')
+            st.dataframe(pd.DataFrame([{'Descrição': desc, 'Valor': float(derivadas.iloc[0][f])}
+                for f, desc in DERIVADAS.items()]), hide_index=True)
+    path=pasta_artefatos()/"faixas.csv"
     if path.exists():
         faixas=pd.read_csv(path)
         with st.expander("Como interpretar este score"):
@@ -88,8 +96,9 @@ if modo=="Demonstração local":
         st.info("Este é um cenário hipotético baseado no exemplo. Os valores precisam continuar coerentes entre si; "
                 "editar só o tamanho não recalcula o histórico.")
         with st.form("cenario"):
-            tabela=pd.DataFrame({"Variável":FEATURES,"Descrição":[DESCRICOES[f] for f in FEATURES],
-                                "Valor":[float(linha[f]) for f in FEATURES]})
+            descricoes = {**DESCRICOES, **ESTATICAS}
+            tabela=pd.DataFrame({"Variável":meta['variaveis'],"Descrição":[descricoes[f] for f in meta['variaveis']],
+                                "Valor":[float(linha[f]) for f in meta['variaveis']]})
             alterado=st.data_editor(tabela,disabled=["Variável","Descrição"],hide_index=True,width="stretch",height=350)
             enviar=st.form_submit_button("Estimar cenário")
         if enviar:
@@ -127,17 +136,17 @@ else:
         if st.button("Estimar risco do commit"):
             try:
                 with st.spinner("Conferindo métricas e processando somente os ancestrais do commit…"):
-                    valores,link=extrair_cache(repo,commits[i]['sha'],token_opcional())
+                    valores,link=extrair_cache(repo,commits[i]['sha'],token_opcional(), 'n_entropia' in meta['variaveis'])
                 mostrar(pipeline,valores,link=link)
             except (ErroGitHub,ExtracaoIncompativel,ValueError,OSError) as exc:
                 st.error(str(exc)); st.info("Use um exemplo local enquanto a consulta não estiver disponível.")
 
 st.divider()
-st.caption(f"{meta['modelo']} · {meta['estrategia']} · 48 entradas · histórico de primeiro pai.")
+st.caption(f"{meta['modelo']} · {meta['estrategia']} · {len(meta['variaveis'])} entradas · histórico de primeiro pai.")
 st.caption("Treinado com rótulos históricos de projetos Apache envolvendo Java. Não considera o tamanho total do "
            "repositório, não identifica a linha defeituosa e não garante qualidade em projetos da FIAP.")
 with st.expander("Desempenho e limites do experimento"):
-    final=json.loads((ROOT/'resultados/teste_final.json').read_text(encoding='utf-8'))
+    final=json.loads((ROOT/meta.get('resultado_avaliacao', 'resultados/teste_final.json')).read_text(encoding='utf-8'))
     m=final['metricas']
     st.write(f"No período final reavaliado: F1 **{m['f1']:.3f}**, acurácia **{m['acuracia']:.1%}**, "
              f"precision **{m['precision']:.1%}**, recall **{m['recall']:.1%}**.")
@@ -147,3 +156,15 @@ with st.expander("Desempenho e limites do experimento"):
                "e F1 zero. Por isso a seleção considera a detecção de bugs, não só acertos totais.")
     st.caption("Esse período já havia sido avaliado na versão inicial. A comparação atual é exploratória; "
                "uma validação confirmatória exige novos dados. Rótulos SZZ e mensagens de correção são imperfeitos.")
+    if 'periodo' in final:
+        st.caption(final['periodo'])
+        st.caption("2019 foi separado da avaliação principal. A comparação usa os mesmos commits para os dois modelos.")
+        anterior = final['original_mesmos_commits']
+        st.write(f"Nos mesmos commits, o modelo original tinha F1 **{anterior['f1']:.3f}**, "
+                 f"precision **{anterior['precision']:.1%}** e recall **{anterior['recall']:.1%}**.")
+        if m['f1'] <= anterior['f1']:
+            st.caption("A revisão venceu na validação, mas não melhorou o F1 neste período final.")
+        if 'anterior_mesmos_commits' in final:
+            previo = final['anterior_mesmos_commits']
+            st.write(f"A versão anterior, com limiar ajustado, tinha F1 **{previo['f1']:.3f}**, "
+                     f"precision **{previo['precision']:.1%}** e recall **{previo['recall']:.1%}** nos mesmos commits.")

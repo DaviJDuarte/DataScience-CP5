@@ -1,0 +1,13 @@
+{
+  "data": "2026-10-08",
+  "comando": "python -m unittest testar_balanceamento testar_projeto testar_extracao -v",
+  "testes": 23,
+  "falhas": 0,
+  "erros": 0,
+  "celulas_notebook_executadas": 18,
+  "erros_notebook": 0,
+  "cache_assinatura_conferida": true,
+  "grafico_revisao_inspecionado": true,
+  "notebook_sete_exercicios_em_sequencia": true,
+  "paridade_modelo_final_e_seis_exemplos": true
+}

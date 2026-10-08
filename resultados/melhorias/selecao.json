@@ -1,0 +1,53 @@
+{
+  "id": "lightgbm_06",
+  "tipo": "optuna",
+  "modelo": "LightGBM",
+  "pistas": "razoes",
+  "pesos": "balanced",
+  "parametros": {
+    "n_estimators": 400,
+    "learning_rate": 0.05572633831152022,
+    "reg_alpha": 4.268407710065496,
+    "reg_lambda": 0.5595986878006082,
+    "subsample": 0.7936340230624704,
+    "colsample_bytree": 0.914442898490067,
+    "num_leaves": 31,
+    "min_child_samples": 500,
+    "min_split_gain": 0.4040601897822085,
+    "subsample_freq": 1
+  },
+  "estrategia": "Busca ampliada de pistas e regularização",
+  "limiar": 0.71,
+  "ajuste_final": {
+    "n_ajuste_interno": 66620,
+    "n_validacao_interna": 17486,
+    "n_treino": 84106,
+    "fim_ajuste_interno": "2016-02-12 11:30:08+00:00",
+    "inicio_validacao_interna": "2016-02-12 11:45:12+00:00",
+    "fim_treino": "2017-10-06 17:12:24+00:00",
+    "contagens_por_fit": [
+      {
+        "0": 47211,
+        "1": 19409
+      },
+      {
+        "0": 59768,
+        "1": 24338
+      }
+    ],
+    "pesos_por_fit": [
+      {
+        "0": 0.7055559085806274,
+        "1": 1.7162141274666391
+      },
+      {
+        "0": 0.7036039352161692,
+        "1": 1.7278741063357712
+      }
+    ]
+  },
+  "f1_validacao": 0.6167558902667927,
+  "desvio_f1": 0.01939811374491391,
+  "regra": "Maior F1 médio; menor desvio; menos pistas; menos árvores.",
+  "assinatura_melhorias": "15f8db867ea407f2ed4302075f2c680a33c17b12c453b0f1f9b288895872b563"
+}

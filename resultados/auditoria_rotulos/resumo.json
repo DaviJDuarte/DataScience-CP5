@@ -1,0 +1,95 @@
+{
+  "linhas": 106674,
+  "positivos": 28239,
+  "negativos": 78435,
+  "duplicatas_sha": 0,
+  "rotulos_divergentes": 0,
+  "fix_divergentes": 0,
+  "sem_proveniencia": 0,
+  "negativos_candidatos_szz_descartados": 334,
+  "motivos_descarte": {
+    "fixcount_acima_limite": 260,
+    "ordem_temporal": 71,
+    "bugcount_acima_limite": 3
+  },
+  "positivos_sem_relato_fixed": 11,
+  "positivos_com_vinculo_sem_chave": 8,
+  "positivos_com_colisao_issue_pr": 8,
+  "positivos_so_vinculos_sem_chave": 1,
+  "positivos_com_correcao_antes_relato": 46,
+  "positivos_para_revisao": 64,
+  "positivos_sem_evidencia_sem_alerta": 45,
+  "reports_sem_resolution_fixed": 3037,
+  "reports_associados_sem_fixed": 100,
+  "limites": {
+    "max_fixcount": 13,
+    "max_bugcount": 8
+  },
+  "disponibilidade_temporal": [
+    {
+      "trecho": "treino_final",
+      "fim_treino": "2017-10-06 17:12:24+00:00",
+      "commits_treino": 84106,
+      "positivos_treino": 24338,
+      "primeira_correcao_posterior": 3099,
+      "fracao_dos_positivos": 0.12733174459692662
+    },
+    {
+      "trecho": "fold_1",
+      "fim_treino": "2011-03-21 23:56:35+00:00",
+      "commits_treino": 20166,
+      "positivos_treino": 4965,
+      "primeira_correcao_posterior": 2618,
+      "fracao_dos_positivos": 0.5272910372608258
+    },
+    {
+      "trecho": "fold_2",
+      "fim_treino": "2014-02-21 10:56:47+00:00",
+      "commits_treino": 40629,
+      "positivos_treino": 12036,
+      "primeira_correcao_posterior": 3322,
+      "fracao_dos_positivos": 0.2760053173811898
+    },
+    {
+      "trecho": "fold_3",
+      "fim_treino": "2015-09-10 07:34:24+00:00",
+      "commits_treino": 62307,
+      "positivos_treino": 17998,
+      "primeira_correcao_posterior": 4163,
+      "fracao_dos_positivos": 0.23130347816424046
+    }
+  ],
+  "familia_hadoop": {
+    "project_familia": "apache/hadoop (familia)",
+    "commits": 16192,
+    "positivos": 3060,
+    "taxa_buggy": 0.18898221343873517
+  },
+  "vinculos_git": {
+    "associacoes": 44202,
+    "objetos_indisponiveis": 0,
+    "sem_chave_literal": 77,
+    "sem_chave_flexivel": 47,
+    "possivel_colisao_issue_pr": 43,
+    "fix_antes_report_mais_1d": 30,
+    "datas_fix_aceitas_conferidas": true
+  },
+  "rotulos_alterados": 0,
+  "modelo_alterado": false,
+  "conclusao": "Agrupamento por família corrigido nos relatórios; nenhuma troca automática de rótulo é justificada.",
+  "limites_auditoria": [
+    "Reprodução do SZZ verifica consistência interna, não verdade do defeito.",
+    "O fuso de Created do export Jira não é declarado; mantida a comparação sem fuso do código original.",
+    "Primeira correção vinculada é evidência disponível no pacote, não garantia da primeira descoberta real.",
+    "Negativos residuais não têm certificação de ausência de defeito.",
+    "Campos de proveniência, datas futuras e flags de revisão não podem entrar como preditores."
+  ],
+  "fontes": {
+    "pacote": "https://zenodo.org/records/5907847",
+    "artigo": "https://arxiv.org/html/2203.00101",
+    "coleta": "https://github.com/hosseinkshvrz/apachejit/blob/master/src/gitminer.py",
+    "ligacao": "https://github.com/hosseinkshvrz/apachejit/blob/master/notebooks/data_linking_filtering.ipynb",
+    "construcao": "https://github.com/hosseinkshvrz/apachejit/blob/master/notebooks/dataset_construction.ipynb",
+    "issue_upstream": "https://github.com/hosseinkshvrz/apachejit/issues/1"
+  }
+}

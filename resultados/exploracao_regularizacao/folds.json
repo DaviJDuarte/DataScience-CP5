@@ -1,0 +1,722 @@
+[
+  {
+    "candidato": "referencia",
+    "fold": 1,
+    "n_treino": 20166,
+    "n_validacao": 20463,
+    "limiar": 0.29,
+    "f1": 0.6051031004302032,
+    "precision": 0.6362501949773827,
+    "recall": 0.5768632442370245,
+    "acuracia": 0.7398230953428139,
+    "acuracia_balanceada": 0.7013647165032195,
+    "roc_auc": 0.7800394270724298,
+    "average_precision": 0.6607789454670863,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2011-03-21 23:56:35+00:00",
+    "validacao_inicio": "2011-03-22 00:22:04+00:00",
+    "n_ajuste_interno": 16128,
+    "n_validacao_interna": 4038,
+    "fim_ajuste_interno": "2010-06-25 05:38:24+00:00",
+    "inicio_validacao_interna": "2010-06-25 05:47:02+00:00",
+    "fim_validacao_interna": "2011-03-21 23:56:35+00:00",
+    "contagens_fit": {
+      "0": 15201,
+      "1": 4965
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "referencia",
+    "fold": 2,
+    "n_treino": 40629,
+    "n_validacao": 21678,
+    "limiar": 0.26,
+    "f1": 0.588813940415964,
+    "precision": 0.5066505441354293,
+    "recall": 0.7027843005702784,
+    "acuracia": 0.7300488974997693,
+    "acuracia_balanceada": 0.7215881289056534,
+    "roc_auc": 0.792836667520751,
+    "average_precision": 0.5792828558281177,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2014-02-21 10:56:47+00:00",
+    "validacao_inicio": "2014-02-21 11:26:01+00:00",
+    "n_ajuste_interno": 32402,
+    "n_validacao_interna": 8227,
+    "fim_ajuste_interno": "2012-12-18 12:02:26+00:00",
+    "inicio_validacao_interna": "2012-12-18 12:53:39+00:00",
+    "fim_validacao_interna": "2014-02-21 10:56:47+00:00",
+    "contagens_fit": {
+      "0": 28593,
+      "1": 12036
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "referencia",
+    "fold": 3,
+    "n_treino": 62307,
+    "n_validacao": 21799,
+    "limiar": 0.27,
+    "f1": 0.6243714185475383,
+    "precision": 0.4960973796692065,
+    "recall": 0.8421135646687697,
+    "acuracia": 0.7053075829166475,
+    "acuracia_balanceada": 0.7456573386446248,
+    "roc_auc": 0.8264909642948898,
+    "average_precision": 0.6589359874516908,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2015-09-10 07:34:24+00:00",
+    "validacao_inicio": "2015-09-10 07:42:01+00:00",
+    "n_ajuste_interno": 49502,
+    "n_validacao_interna": 12805,
+    "fim_ajuste_interno": "2014-10-31 15:02:03+00:00",
+    "inicio_validacao_interna": "2014-10-31 15:44:40+00:00",
+    "fim_validacao_interna": "2015-09-10 07:34:24+00:00",
+    "contagens_fit": {
+      "0": 44309,
+      "1": 17998
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_15_l2_10",
+    "fold": 1,
+    "n_treino": 20166,
+    "n_validacao": 20463,
+    "limiar": 0.33,
+    "f1": 0.5950007667535654,
+    "precision": 0.6498074024451516,
+    "recall": 0.548720124451987,
+    "acuracia": 0.7418755803156918,
+    "acuracia_balanceada": 0.6962910658102229,
+    "roc_auc": 0.7808225215500673,
+    "average_precision": 0.6593731288708001,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2011-03-21 23:56:35+00:00",
+    "validacao_inicio": "2011-03-22 00:22:04+00:00",
+    "n_ajuste_interno": 16128,
+    "n_validacao_interna": 4038,
+    "fim_ajuste_interno": "2010-06-25 05:38:24+00:00",
+    "inicio_validacao_interna": "2010-06-25 05:47:02+00:00",
+    "fim_validacao_interna": "2011-03-21 23:56:35+00:00",
+    "contagens_fit": {
+      "0": 15201,
+      "1": 4965
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_15_l2_10",
+    "fold": 2,
+    "n_treino": 40629,
+    "n_validacao": 21678,
+    "limiar": 0.22,
+    "f1": 0.5898691714189869,
+    "precision": 0.49155764284915576,
+    "recall": 0.7373364642737337,
+    "acuracia": 0.7180090414244856,
+    "acuracia_balanceada": 0.7240067406632094,
+    "roc_auc": 0.8003766313230591,
+    "average_precision": 0.583134360899346,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2014-02-21 10:56:47+00:00",
+    "validacao_inicio": "2014-02-21 11:26:01+00:00",
+    "n_ajuste_interno": 32402,
+    "n_validacao_interna": 8227,
+    "fim_ajuste_interno": "2012-12-18 12:02:26+00:00",
+    "inicio_validacao_interna": "2012-12-18 12:53:39+00:00",
+    "fim_validacao_interna": "2014-02-21 10:56:47+00:00",
+    "contagens_fit": {
+      "0": 28593,
+      "1": 12036
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_15_l2_10",
+    "fold": 3,
+    "n_treino": 62307,
+    "n_validacao": 21799,
+    "limiar": 0.28,
+    "f1": 0.623952802359882,
+    "precision": 0.4983977379830349,
+    "recall": 0.8340694006309148,
+    "acuracia": 0.7076012661131245,
+    "acuracia_balanceada": 0.7449019621047064,
+    "roc_auc": 0.8266987388845595,
+    "average_precision": 0.6565998877030215,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2015-09-10 07:34:24+00:00",
+    "validacao_inicio": "2015-09-10 07:42:01+00:00",
+    "n_ajuste_interno": 49502,
+    "n_validacao_interna": 12805,
+    "fim_ajuste_interno": "2014-10-31 15:02:03+00:00",
+    "inicio_validacao_interna": "2014-10-31 15:44:40+00:00",
+    "fim_validacao_interna": "2015-09-10 07:34:24+00:00",
+    "contagens_fit": {
+      "0": 44309,
+      "1": 17998
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_15_l2_30",
+    "fold": 1,
+    "n_treino": 20166,
+    "n_validacao": 20463,
+    "limiar": 0.24,
+    "f1": 0.6222602514315804,
+    "precision": 0.5819995075104654,
+    "recall": 0.6685051619290058,
+    "acuracia": 0.7195425890631872,
+    "acuracia_balanceada": 0.707497801991982,
+    "roc_auc": 0.7792074386910576,
+    "average_precision": 0.6581285267471624,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2011-03-21 23:56:35+00:00",
+    "validacao_inicio": "2011-03-22 00:22:04+00:00",
+    "n_ajuste_interno": 16128,
+    "n_validacao_interna": 4038,
+    "fim_ajuste_interno": "2010-06-25 05:38:24+00:00",
+    "inicio_validacao_interna": "2010-06-25 05:47:02+00:00",
+    "fim_validacao_interna": "2011-03-21 23:56:35+00:00",
+    "contagens_fit": {
+      "0": 15201,
+      "1": 4965
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_15_l2_30",
+    "fold": 2,
+    "n_treino": 40629,
+    "n_validacao": 21678,
+    "limiar": 0.21,
+    "f1": 0.5909952296935241,
+    "precision": 0.4841023445027299,
+    "recall": 0.758470311975847,
+    "acuracia": 0.711274102777009,
+    "acuracia_balanceada": 0.7259200630889671,
+    "roc_auc": 0.8017749097555067,
+    "average_precision": 0.581760986135838,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2014-02-21 10:56:47+00:00",
+    "validacao_inicio": "2014-02-21 11:26:01+00:00",
+    "n_ajuste_interno": 32402,
+    "n_validacao_interna": 8227,
+    "fim_ajuste_interno": "2012-12-18 12:02:26+00:00",
+    "inicio_validacao_interna": "2012-12-18 12:53:39+00:00",
+    "fim_validacao_interna": "2014-02-21 10:56:47+00:00",
+    "contagens_fit": {
+      "0": 28593,
+      "1": 12036
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_15_l2_30",
+    "fold": 3,
+    "n_treino": 62307,
+    "n_validacao": 21799,
+    "limiar": 0.28,
+    "f1": 0.6238499646142959,
+    "precision": 0.49821024868123587,
+    "recall": 0.8342271293375394,
+    "acuracia": 0.7074177714574063,
+    "acuracia_balanceada": 0.7448191083649984,
+    "roc_auc": 0.8261044223419515,
+    "average_precision": 0.6517791932966478,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2015-09-10 07:34:24+00:00",
+    "validacao_inicio": "2015-09-10 07:42:01+00:00",
+    "n_ajuste_interno": 49502,
+    "n_validacao_interna": 12805,
+    "fim_ajuste_interno": "2014-10-31 15:02:03+00:00",
+    "inicio_validacao_interna": "2014-10-31 15:44:40+00:00",
+    "fim_validacao_interna": "2015-09-10 07:34:24+00:00",
+    "contagens_fit": {
+      "0": 44309,
+      "1": 17998
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_7_l2_50",
+    "fold": 1,
+    "n_treino": 20166,
+    "n_validacao": 20463,
+    "limiar": 0.3,
+    "f1": 0.6061442370542524,
+    "precision": 0.6230217975515079,
+    "recall": 0.5901569792108613,
+    "acuracia": 0.7349850950496017,
+    "acuracia_balanceada": 0.7008057894859563,
+    "roc_auc": 0.7772565296910818,
+    "average_precision": 0.6531738641890137,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2011-03-21 23:56:35+00:00",
+    "validacao_inicio": "2011-03-22 00:22:04+00:00",
+    "n_ajuste_interno": 16128,
+    "n_validacao_interna": 4038,
+    "fim_ajuste_interno": "2010-06-25 05:38:24+00:00",
+    "inicio_validacao_interna": "2010-06-25 05:47:02+00:00",
+    "fim_validacao_interna": "2011-03-21 23:56:35+00:00",
+    "contagens_fit": {
+      "0": 15201,
+      "1": 4965
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_7_l2_50",
+    "fold": 2,
+    "n_treino": 40629,
+    "n_validacao": 21678,
+    "limiar": 0.2,
+    "f1": 0.5915798888392002,
+    "precision": 0.4777628727685481,
+    "recall": 0.7765850385776585,
+    "acuracia": 0.7050927207306947,
+    "acuracia_balanceada": 0.7272782662982464,
+    "roc_auc": 0.8031761978318782,
+    "average_precision": 0.5775875020125703,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2014-02-21 10:56:47+00:00",
+    "validacao_inicio": "2014-02-21 11:26:01+00:00",
+    "n_ajuste_interno": 32402,
+    "n_validacao_interna": 8227,
+    "fim_ajuste_interno": "2012-12-18 12:02:26+00:00",
+    "inicio_validacao_interna": "2012-12-18 12:53:39+00:00",
+    "fim_validacao_interna": "2014-02-21 10:56:47+00:00",
+    "contagens_fit": {
+      "0": 28593,
+      "1": 12036
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_7_l2_50",
+    "fold": 3,
+    "n_treino": 62307,
+    "n_validacao": 21799,
+    "limiar": 0.26,
+    "f1": 0.6169267570338307,
+    "precision": 0.48279550722053843,
+    "recall": 0.8542586750788643,
+    "acuracia": 0.691453736409927,
+    "acuracia_balanceada": 0.7394716623987374,
+    "roc_auc": 0.8252440004628097,
+    "average_precision": 0.6530831432937079,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2015-09-10 07:34:24+00:00",
+    "validacao_inicio": "2015-09-10 07:42:01+00:00",
+    "n_ajuste_interno": 49502,
+    "n_validacao_interna": 12805,
+    "fim_ajuste_interno": "2014-10-31 15:02:03+00:00",
+    "inicio_validacao_interna": "2014-10-31 15:44:40+00:00",
+    "fim_validacao_interna": "2015-09-10 07:34:24+00:00",
+    "contagens_fit": {
+      "0": 44309,
+      "1": 17998
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_31_l2_5",
+    "fold": 1,
+    "n_treino": 20166,
+    "n_validacao": 20463,
+    "limiar": 0.29,
+    "f1": 0.6040656876220791,
+    "precision": 0.6183353080568721,
+    "recall": 0.5904398246358366,
+    "acuracia": 0.7325416605580805,
+    "acuracia_balanceada": 0.6990057546118251,
+    "roc_auc": 0.7781980066240574,
+    "average_precision": 0.6598203540130733,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2011-03-21 23:56:35+00:00",
+    "validacao_inicio": "2011-03-22 00:22:04+00:00",
+    "n_ajuste_interno": 16128,
+    "n_validacao_interna": 4038,
+    "fim_ajuste_interno": "2010-06-25 05:38:24+00:00",
+    "inicio_validacao_interna": "2010-06-25 05:47:02+00:00",
+    "fim_validacao_interna": "2011-03-21 23:56:35+00:00",
+    "contagens_fit": {
+      "0": 15201,
+      "1": 4965
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_31_l2_5",
+    "fold": 2,
+    "n_treino": 40629,
+    "n_validacao": 21678,
+    "limiar": 0.22,
+    "f1": 0.5844276429234646,
+    "precision": 0.4833260201842914,
+    "recall": 0.7390137537739013,
+    "acuracia": 0.7109511947596642,
+    "acuracia_balanceada": 0.7196595875003383,
+    "roc_auc": 0.7924873567206715,
+    "average_precision": 0.5767513846505362,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2014-02-21 10:56:47+00:00",
+    "validacao_inicio": "2014-02-21 11:26:01+00:00",
+    "n_ajuste_interno": 32402,
+    "n_validacao_interna": 8227,
+    "fim_ajuste_interno": "2012-12-18 12:02:26+00:00",
+    "inicio_validacao_interna": "2012-12-18 12:53:39+00:00",
+    "fim_validacao_interna": "2014-02-21 10:56:47+00:00",
+    "contagens_fit": {
+      "0": 28593,
+      "1": 12036
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_31_l2_5",
+    "fold": 3,
+    "n_treino": 62307,
+    "n_validacao": 21799,
+    "limiar": 0.29,
+    "f1": 0.6302262443438914,
+    "precision": 0.5103077674645823,
+    "recall": 0.8238170347003154,
+    "acuracia": 0.7188403137758613,
+    "acuracia_balanceada": 0.749802300906662,
+    "roc_auc": 0.8279735365941007,
+    "average_precision": 0.6584693116051118,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2015-09-10 07:34:24+00:00",
+    "validacao_inicio": "2015-09-10 07:42:01+00:00",
+    "n_ajuste_interno": 49502,
+    "n_validacao_interna": 12805,
+    "fim_ajuste_interno": "2014-10-31 15:02:03+00:00",
+    "inicio_validacao_interna": "2014-10-31 15:44:40+00:00",
+    "fim_validacao_interna": "2015-09-10 07:34:24+00:00",
+    "contagens_fit": {
+      "0": 44309,
+      "1": 17998
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_27_l2_10",
+    "fold": 1,
+    "n_treino": 20166,
+    "n_validacao": 20463,
+    "limiar": 0.3,
+    "f1": 0.6064676253741149,
+    "precision": 0.6267350633675317,
+    "recall": 0.5874699476735964,
+    "acuracia": 0.7365488931241754,
+    "acuracia_balanceada": 0.7013663955811231,
+    "roc_auc": 0.7803423475105802,
+    "average_precision": 0.6599531879978846,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2011-03-21 23:56:35+00:00",
+    "validacao_inicio": "2011-03-22 00:22:04+00:00",
+    "n_ajuste_interno": 16128,
+    "n_validacao_interna": 4038,
+    "fim_ajuste_interno": "2010-06-25 05:38:24+00:00",
+    "inicio_validacao_interna": "2010-06-25 05:47:02+00:00",
+    "fim_validacao_interna": "2011-03-21 23:56:35+00:00",
+    "contagens_fit": {
+      "0": 15201,
+      "1": 4965
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_27_l2_10",
+    "fold": 2,
+    "n_treino": 40629,
+    "n_validacao": 21678,
+    "limiar": 0.23,
+    "f1": 0.588155668358714,
+    "precision": 0.4930216725292182,
+    "recall": 0.7287822878228782,
+    "acuracia": 0.7193006734938647,
+    "acuracia_balanceada": 0.7222430146164531,
+    "roc_auc": 0.7962447370719571,
+    "average_precision": 0.5805820093672638,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2014-02-21 10:56:47+00:00",
+    "validacao_inicio": "2014-02-21 11:26:01+00:00",
+    "n_ajuste_interno": 32402,
+    "n_validacao_interna": 8227,
+    "fim_ajuste_interno": "2012-12-18 12:02:26+00:00",
+    "inicio_validacao_interna": "2012-12-18 12:53:39+00:00",
+    "fim_validacao_interna": "2014-02-21 10:56:47+00:00",
+    "contagens_fit": {
+      "0": 28593,
+      "1": 12036
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "folhas_27_l2_10",
+    "fold": 3,
+    "n_treino": 62307,
+    "n_validacao": 21799,
+    "limiar": 0.28,
+    "f1": 0.6271065748872537,
+    "precision": 0.5026636225266362,
+    "recall": 0.8334384858044164,
+    "acuracia": 0.7117298958667829,
+    "acuracia_balanceada": 0.7476268048402378,
+    "roc_auc": 0.8278022072428075,
+    "average_precision": 0.6591893565245214,
+    "treino_inicio": "2003-09-11 14:54:46+00:00",
+    "treino_fim": "2015-09-10 07:34:24+00:00",
+    "validacao_inicio": "2015-09-10 07:42:01+00:00",
+    "n_ajuste_interno": 49502,
+    "n_validacao_interna": 12805,
+    "fim_ajuste_interno": "2014-10-31 15:02:03+00:00",
+    "inicio_validacao_interna": "2014-10-31 15:44:40+00:00",
+    "fim_validacao_interna": "2015-09-10 07:34:24+00:00",
+    "contagens_fit": {
+      "0": 44309,
+      "1": 17998
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "janela_recente_80pct",
+    "fold": 1,
+    "n_treino": 16135,
+    "n_validacao": 20463,
+    "limiar": 0.28,
+    "f1": 0.6045437616387337,
+    "precision": 0.6386528171230721,
+    "recall": 0.5738933672747843,
+    "acuracia": 0.7405561256902703,
+    "acuracia_balanceada": 0.7012238640436048,
+    "roc_auc": 0.7845715909818606,
+    "average_precision": 0.6596160526332301,
+    "treino_inicio": "2007-07-27 08:32:49+00:00",
+    "treino_fim": "2011-03-21 23:56:35+00:00",
+    "validacao_inicio": "2011-03-22 00:22:04+00:00",
+    "n_ajuste_interno": 12903,
+    "n_validacao_interna": 3232,
+    "fim_ajuste_interno": "2010-08-25 13:26:23+00:00",
+    "inicio_validacao_interna": "2010-08-25 13:55:52+00:00",
+    "fim_validacao_interna": "2011-03-21 23:56:35+00:00",
+    "contagens_fit": {
+      "0": 11616,
+      "1": 4519
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "janela_recente_80pct",
+    "fold": 2,
+    "n_treino": 32568,
+    "n_validacao": 21678,
+    "limiar": 0.2,
+    "f1": 0.5836764033196106,
+    "precision": 0.4781072690290119,
+    "recall": 0.7490774907749077,
+    "acuracia": 0.7061075744994926,
+    "acuracia_balanceada": 0.7194420286656417,
+    "roc_auc": 0.7914639123629258,
+    "average_precision": 0.5780187888168851,
+    "treino_inicio": "2008-11-20 05:03:14+00:00",
+    "treino_fim": "2014-02-21 10:56:47+00:00",
+    "validacao_inicio": "2014-02-21 11:26:01+00:00",
+    "n_ajuste_interno": 25973,
+    "n_validacao_interna": 6595,
+    "fim_ajuste_interno": "2013-03-25 20:42:24+00:00",
+    "inicio_validacao_interna": "2013-03-25 22:30:30+00:00",
+    "fim_validacao_interna": "2014-02-21 10:56:47+00:00",
+    "contagens_fit": {
+      "0": 21662,
+      "1": 10906
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "janela_recente_80pct",
+    "fold": 3,
+    "n_treino": 50216,
+    "n_validacao": 21799,
+    "limiar": 0.32,
+    "f1": 0.637753199950292,
+    "precision": 0.5261431207709658,
+    "recall": 0.8094637223974763,
+    "acuracia": 0.7325565392907931,
+    "acuracia_balanceada": 0.7552396560108217,
+    "roc_auc": 0.8258934746086269,
+    "average_precision": 0.6527125217645485,
+    "treino_inicio": "2009-09-15 13:03:35+00:00",
+    "treino_fim": "2015-09-10 07:34:24+00:00",
+    "validacao_inicio": "2015-09-10 07:42:01+00:00",
+    "n_ajuste_interno": 40061,
+    "n_validacao_interna": 10155,
+    "fim_ajuste_interno": "2015-01-16 16:43:45+00:00",
+    "inicio_validacao_interna": "2015-01-16 16:44:44+00:00",
+    "fim_validacao_interna": "2015-09-10 07:34:24+00:00",
+    "contagens_fit": {
+      "0": 34335,
+      "1": 15881
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "janela_recente_60pct",
+    "fold": 1,
+    "n_treino": 12104,
+    "n_validacao": 20463,
+    "limiar": 0.35,
+    "f1": 0.5751066182277681,
+    "precision": 0.6512251833303524,
+    "recall": 0.5149200961674445,
+    "acuracia": 0.73708644871231,
+    "acuracia_balanceada": 0.6846553885855144,
+    "roc_auc": 0.7755804878559793,
+    "average_precision": 0.6562331866342608,
+    "treino_inicio": "2008-11-20 06:49:38+00:00",
+    "treino_fim": "2011-03-21 23:56:35+00:00",
+    "validacao_inicio": "2011-03-22 00:22:04+00:00",
+    "n_ajuste_interno": 9678,
+    "n_validacao_interna": 2426,
+    "fim_ajuste_interno": "2010-10-27 14:38:45+00:00",
+    "inicio_validacao_interna": "2010-10-27 19:00:02+00:00",
+    "fim_validacao_interna": "2011-03-21 23:56:35+00:00",
+    "contagens_fit": {
+      "0": 8269,
+      "1": 3835
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "janela_recente_60pct",
+    "fold": 2,
+    "n_treino": 24503,
+    "n_validacao": 21678,
+    "limiar": 0.25,
+    "f1": 0.5900069396252602,
+    "precision": 0.5031960227272727,
+    "recall": 0.7130157665213016,
+    "acuracia": 0.7274656333610111,
+    "acuracia_balanceada": 0.7229815406798414,
+    "roc_auc": 0.7937662472745646,
+    "average_precision": 0.5988744157388213,
+    "treino_inicio": "2010-06-25 05:27:41+00:00",
+    "treino_fim": "2014-02-21 10:56:47+00:00",
+    "validacao_inicio": "2014-02-21 11:26:01+00:00",
+    "n_ajuste_interno": 19537,
+    "n_validacao_interna": 4966,
+    "fim_ajuste_interno": "2013-06-24 22:21:33+00:00",
+    "inicio_validacao_interna": "2013-06-25 00:22:12+00:00",
+    "fim_validacao_interna": "2014-02-21 10:56:47+00:00",
+    "contagens_fit": {
+      "0": 15968,
+      "1": 8535
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  {
+    "candidato": "janela_recente_60pct",
+    "fold": 3,
+    "n_treino": 38108,
+    "n_validacao": 21799,
+    "limiar": 0.28,
+    "f1": 0.6303618499880183,
+    "precision": 0.5082109737248841,
+    "recall": 0.8298107255520505,
+    "acuracia": 0.7169594935547502,
+    "acuracia_balanceada": 0.7502440004628097,
+    "roc_auc": 0.8263732518886326,
+    "average_precision": 0.6547502030803185,
+    "treino_inicio": "2011-10-24 07:55:31+00:00",
+    "treino_fim": "2015-09-10 07:34:24+00:00",
+    "validacao_inicio": "2015-09-10 07:42:01+00:00",
+    "n_ajuste_interno": 30526,
+    "n_validacao_interna": 7582,
+    "fim_ajuste_interno": "2015-02-28 16:52:41+00:00",
+    "inicio_validacao_interna": "2015-02-28 17:17:19+00:00",
+    "fim_validacao_interna": "2015-09-10 07:34:24+00:00",
+    "contagens_fit": {
+      "0": 26379,
+      "1": 11729
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  }
+]

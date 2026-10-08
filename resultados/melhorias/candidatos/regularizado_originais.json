@@ -1,0 +1,149 @@
+{
+  "config": {
+    "id": "regularizado_originais",
+    "tipo": "controle",
+    "modelo": "LightGBM",
+    "pistas": "originais",
+    "pesos": null,
+    "parametros": {
+      "n_estimators": 500,
+      "learning_rate": 0.03,
+      "num_leaves": 15,
+      "min_child_samples": 200,
+      "reg_alpha": 1.0,
+      "reg_lambda": 30.0,
+      "colsample_bytree": 0.8,
+      "subsample": 0.8,
+      "subsample_freq": 1
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "limiar": 0.24,
+      "f1": 0.6222602514315804,
+      "precision": 0.5819995075104654,
+      "recall": 0.6685051619290058,
+      "acuracia": 0.7195425890631872,
+      "acuracia_balanceada": 0.707497801991982,
+      "roc_auc": 0.7792074386910576,
+      "average_precision": 0.6581285267471624,
+      "n_ajuste_interno": 16128,
+      "n_validacao_interna": 4038,
+      "n_treino": 20166,
+      "fim_ajuste_interno": "2010-06-25 05:38:24+00:00",
+      "inicio_validacao_interna": "2010-06-25 05:47:02+00:00",
+      "fim_treino": "2011-03-21 23:56:35+00:00",
+      "contagens_por_fit": [
+        {
+          "0": 12627,
+          "1": 3501
+        },
+        {
+          "0": 15201,
+          "1": 4965
+        }
+      ],
+      "pesos_por_fit": [
+        {
+          "0": 1.0,
+          "1": 1.0
+        },
+        {
+          "0": 1.0,
+          "1": 1.0
+        }
+      ],
+      "n_validacao": 20463,
+      "inicio_validacao": "2011-03-22 00:22:04+00:00",
+      "fim_validacao": "2014-02-21 10:56:47+00:00"
+    },
+    {
+      "fold": 2,
+      "limiar": 0.21,
+      "f1": 0.5909952296935241,
+      "precision": 0.4841023445027299,
+      "recall": 0.758470311975847,
+      "acuracia": 0.711274102777009,
+      "acuracia_balanceada": 0.7259200630889671,
+      "roc_auc": 0.8017749097555067,
+      "average_precision": 0.581760986135838,
+      "n_ajuste_interno": 32402,
+      "n_validacao_interna": 8227,
+      "n_treino": 40629,
+      "fim_ajuste_interno": "2012-12-18 12:02:26+00:00",
+      "inicio_validacao_interna": "2012-12-18 12:53:39+00:00",
+      "fim_treino": "2014-02-21 10:56:47+00:00",
+      "contagens_por_fit": [
+        {
+          "0": 23386,
+          "1": 9016
+        },
+        {
+          "0": 28593,
+          "1": 12036
+        }
+      ],
+      "pesos_por_fit": [
+        {
+          "0": 1.0,
+          "1": 1.0
+        },
+        {
+          "0": 1.0,
+          "1": 1.0
+        }
+      ],
+      "n_validacao": 21678,
+      "inicio_validacao": "2014-02-21 11:26:01+00:00",
+      "fim_validacao": "2015-09-10 07:34:24+00:00"
+    },
+    {
+      "fold": 3,
+      "limiar": 0.28,
+      "f1": 0.6238499646142959,
+      "precision": 0.49821024868123587,
+      "recall": 0.8342271293375394,
+      "acuracia": 0.7074177714574063,
+      "acuracia_balanceada": 0.7448191083649984,
+      "roc_auc": 0.8261044223419515,
+      "average_precision": 0.6517791932966478,
+      "n_ajuste_interno": 49502,
+      "n_validacao_interna": 12805,
+      "n_treino": 62307,
+      "fim_ajuste_interno": "2014-10-31 15:02:03+00:00",
+      "inicio_validacao_interna": "2014-10-31 15:44:40+00:00",
+      "fim_treino": "2015-09-10 07:34:24+00:00",
+      "contagens_por_fit": [
+        {
+          "0": 35188,
+          "1": 14314
+        },
+        {
+          "0": 44309,
+          "1": 17998
+        }
+      ],
+      "pesos_por_fit": [
+        {
+          "0": 1.0,
+          "1": 1.0
+        },
+        {
+          "0": 1.0,
+          "1": 1.0
+        }
+      ],
+      "n_validacao": 21799,
+      "inicio_validacao": "2015-09-10 07:42:01+00:00",
+      "fim_validacao": "2017-10-06 17:12:24+00:00"
+    }
+  ],
+  "tempo_s": 9.979055700008757,
+  "f1_validacao": 0.6123684819131334,
+  "desvio_f1": 0.01512709996073495,
+  "precision": 0.5214373668981437,
+  "recall": 0.7537342010807974,
+  "average_precision": 0.630556235393216,
+  "roc_auc": 0.8023622569295052
+}

@@ -1,0 +1,165 @@
+{
+  "candidatos": [
+    {
+      "nome": "referencia",
+      "parametros": {},
+      "fracao_recente": 1.0
+    },
+    {
+      "nome": "folhas_15_l2_10",
+      "parametros": {
+        "n_estimators": 500,
+        "learning_rate": 0.03,
+        "num_leaves": 15,
+        "min_child_samples": 100,
+        "reg_alpha": 0.1,
+        "reg_lambda": 10.0,
+        "colsample_bytree": 0.8,
+        "subsample": 0.8,
+        "subsample_freq": 1
+      },
+      "fracao_recente": 1.0
+    },
+    {
+      "nome": "folhas_15_l2_30",
+      "parametros": {
+        "n_estimators": 500,
+        "learning_rate": 0.03,
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "reg_alpha": 1.0,
+        "reg_lambda": 30.0,
+        "colsample_bytree": 0.8,
+        "subsample": 0.8,
+        "subsample_freq": 1
+      },
+      "fracao_recente": 1.0
+    },
+    {
+      "nome": "folhas_7_l2_50",
+      "parametros": {
+        "n_estimators": 500,
+        "learning_rate": 0.05,
+        "num_leaves": 7,
+        "min_child_samples": 100,
+        "reg_alpha": 1.0,
+        "reg_lambda": 50.0,
+        "colsample_bytree": 0.9,
+        "subsample": 0.9,
+        "subsample_freq": 1
+      },
+      "fracao_recente": 1.0
+    },
+    {
+      "nome": "folhas_31_l2_5",
+      "parametros": {
+        "n_estimators": 700,
+        "learning_rate": 0.03,
+        "num_leaves": 31,
+        "min_child_samples": 150,
+        "reg_alpha": 0.1,
+        "reg_lambda": 5.0,
+        "colsample_bytree": 0.9,
+        "subsample": 0.8,
+        "subsample_freq": 1
+      },
+      "fracao_recente": 1.0
+    },
+    {
+      "nome": "folhas_27_l2_10",
+      "parametros": {
+        "n_estimators": 500,
+        "learning_rate": 0.04,
+        "num_leaves": 27,
+        "min_child_samples": 120,
+        "reg_alpha": 0.5,
+        "reg_lambda": 10.0,
+        "colsample_bytree": 0.8,
+        "subsample": 0.8,
+        "subsample_freq": 1
+      },
+      "fracao_recente": 1.0
+    },
+    {
+      "nome": "janela_recente_80pct",
+      "parametros": {},
+      "fracao_recente": 0.8
+    },
+    {
+      "nome": "janela_recente_60pct",
+      "parametros": {},
+      "fracao_recente": 0.6
+    }
+  ],
+  "modelo_base": {
+    "modelo": "LightGBM",
+    "estrategia": "Optuna",
+    "parametros": {
+      "n_estimators": 250,
+      "learning_rate": 0.07902978859187117,
+      "num_leaves": 27,
+      "min_child_samples": 60
+    },
+    "variaveis": [
+      "la",
+      "ld",
+      "nf",
+      "o_n_java",
+      "o_n_teste",
+      "o_n_producao",
+      "o_n_outros",
+      "o_tem_teste",
+      "o_frac_la_teste",
+      "o_la_producao",
+      "o_ld_producao",
+      "o_n_extensoes",
+      "o_n_pastas",
+      "o_n_binarios",
+      "o_n_renomeados",
+      "o_max_la_arquivo",
+      "o_frac_remocao",
+      "q_hora",
+      "q_dia_semana",
+      "q_fim_semana",
+      "q_madrugada",
+      "q_fuso_h",
+      "q_atraso_commit_h",
+      "m_caracteres",
+      "m_palavras",
+      "m_linhas",
+      "m_assunto_caracteres",
+      "w_autor_diferente_committer",
+      "w_autor_commits",
+      "w_autor_dias_desde_primeiro",
+      "w_autor_dias_desde_ultimo",
+      "w_autor_commits_7d",
+      "w_autor_nos_arquivos",
+      "w_autor_frac_arquivos_conhecidos",
+      "w_autor_nas_pastas",
+      "w_autor_frac_correcoes",
+      "l_n_arquivos_novos",
+      "l_frac_arquivos_novos",
+      "l_arq_mudancas_max",
+      "l_arq_mudancas_media",
+      "l_arq_idade_media_d",
+      "l_arq_dias_desde_ultima_min",
+      "l_arq_dias_desde_ultima_media",
+      "l_arq_autores_max",
+      "l_arq_autores_media",
+      "l_arq_correcoes_max",
+      "l_arq_correcoes_media",
+      "l_arq_frac_correcoes"
+    ],
+    "limiar": 0.5,
+    "f1_validacao": 0.5609011900928694,
+    "desvio_f1": 0.05152398863924956,
+    "gap": 0.17113384362098782,
+    "regra": "Tolerância 0,005; desvio, gap positivo, árvores e tempo."
+  },
+  "codigo_sha256": "25b89fc97045d51b7809041a6c919089c9a8042715361c143f2ce613803e127b",
+  "csv_sha256": "5097cbbbab8c4611a709b3cf95ac5c9fe5f62e619bab081911a2a247ddbed4e0",
+  "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+  "selecao_limiar": "80%/20% temporal interno, mesma regra da comparação anterior",
+  "holdout_avaliado": false,
+  "ressalva": "Comparação exploratória em folds já conhecidos; não estima ganho independente."
+}

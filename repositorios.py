@@ -6,6 +6,8 @@ from dados import pasta_repos
 from esquema import ROOT, FEATURES
 from extracao import git, extrair_um, ExtracaoIncompativel
 from github_api import consultar, baixar_commit, medir, repositorio, ErroGitHub
+from novas_pistas import dispersao_commit
+from extrair_dispersao import ler_alvos
 
 
 def caminho_repo(repo):
@@ -40,7 +42,7 @@ def obter_repo(repo, baixar=False):
     return path
 
 
-def metricas_github(repo,sha,token=None):
+def metricas_github(repo,sha,token=None,dispersao=False):
     meta,_=consultar(repo,token)
     if meta.get("private",True): raise ErroGitHub("Somente repositórios públicos são aceitos.")
     commit,arquivos=baixar_commit(repo,sha,token)
@@ -58,4 +60,9 @@ def metricas_github(repo,sha,token=None):
     metricas=extrair_um(path,sha)
     if any(metricas[f]!=esperadas[f] for f in ["la","ld","nf"]):
         raise ExtracaoIncompativel("Contagens de Git e GitHub divergentes. Previsão recusada.")
+    if dispersao:
+        alvos = list(ler_alvos(path, [sha]))
+        if len(alvos) != 1 or alvos[0]['sha'] != sha:
+            raise ExtracaoIncompativel("Diff do alvo indisponível para calcular dispersão.")
+        metricas.update(dispersao_commit(alvos[0]))
     return metricas,commit["html_url"]

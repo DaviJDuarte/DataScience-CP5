@@ -1,0 +1,19 @@
+{
+  "testes": 31,
+  "falhas": 0,
+  "erros": 0,
+  "configuracoes": 42,
+  "folds_por_configuracao": 3,
+  "commits_validacao_por_candidato": 63940,
+  "paridade_interface_6_exemplos": true,
+  "original_preservado": true,
+  "f1_final": 0.5843084596201803,
+  "f1_anterior_mesmos_commits": 0.5851310394009628,
+  "pipeline_sha256": "380e3ae6e03ab8439a49a694391afcc21d5c035b7ae26ea5fb3074100afe0054",
+  "testes_sha256": {
+    "testar_extracao.py": "60edc62421b81223e3aa10c11daeb4e66fa2959cd7d96da6ccc04db10769bcc6",
+    "testar_balanceamento.py": "57531ddb744b35ef811ed6129ebcfb90ac690a9faca1216eeae5355fe797272e",
+    "testar_melhorias.py": "b45c3cb2f08e7edcbfb8bfc348cfc8f4f72ef17dfee58a24439ad4d3e7e7419e",
+    "testar_projeto.py": "68b613759b82e0b7bbe28e67c5c1ba11f84a84879b8353801413fe8988beb955"
+  }
+}

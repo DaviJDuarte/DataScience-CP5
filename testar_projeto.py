@@ -8,8 +8,9 @@ import pandas as pd
 import requests
 from streamlit.testing.v1 import AppTest
 from dados import carregar_dividir, salvar_json
-from modelo import ROOT, FEATURES, carregar_modelo, prever
+from modelo import ROOT, FEATURES, carregar_modelo, prever, pasta_artefatos
 from github_api import repositorio, extrair_commit, consultar, ErroGitHub
+from novas_pistas import colunas_entrada
 
 
 class Integridade(unittest.TestCase):
@@ -28,14 +29,14 @@ class Integridade(unittest.TestCase):
 
     def test_pipeline_e_exemplos(self):
         pipe,meta=carregar_modelo()
-        exemplos=pd.read_csv(ROOT/'artefatos/exemplos.csv')
+        exemplos=pd.read_csv(pasta_artefatos()/'exemplos.csv')
         self.assertGreaterEqual(len(exemplos),5)
         self.assertEqual(set(exemplos.caso),{'Verdadeiro positivo','Verdadeiro negativo','Falso positivo','Falso negativo'})
         pred=prever(pipe,exemplos)
         np.testing.assert_array_equal(pred.previsao,exemplos.previsao)
         np.testing.assert_allclose(pred.score,exemplos.score,rtol=0,atol=1e-12)
-        self.assertEqual(meta['variaveis'],FEATURES)
-        self.assertEqual(pipe.named_steps['imputacao'].n_features_in_,48)
+        self.assertEqual(meta['variaveis'],colunas_entrada(meta.get('pistas', 'originais')))
+        self.assertEqual(pipe.named_steps['imputacao'].n_features_in_, len(meta.get('variaveis_modelo', FEATURES)))
 
     def test_buscas_concluidas(self):
         tabela=pd.read_csv(ROOT/'resultados/comparacao.csv')
@@ -50,7 +51,7 @@ class Integridade(unittest.TestCase):
         self.assertIn('não é teste novo',final['ressalva'])
 
     def test_app_offline_e_retorno_apos_falha_api(self):
-        exemplos=pd.read_csv(ROOT/'artefatos/exemplos.csv')
+        exemplos=pd.read_csv(pasta_artefatos()/'exemplos.csv')
         with patch('requests.get',side_effect=requests.ConnectionError('offline')) as rede:
             app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=30).run()
             self.assertEqual(len(app.exception),0)

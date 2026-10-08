@@ -1,0 +1,33 @@
+{
+  "id": "sem_pesos_ajustado",
+  "class_weight": null,
+  "ajustar_limiar": true,
+  "modelo": "LightGBM",
+  "estrategia": "Revisão de pesos e limiar temporal",
+  "parametros": {
+    "n_estimators": 250,
+    "learning_rate": 0.07902978859187117,
+    "num_leaves": 27,
+    "min_child_samples": 60,
+    "class_weight": null
+  },
+  "limiar": 0.48,
+  "f1_validacao": 0.6060961531312352,
+  "desvio_f1": 0.014533253318272455,
+  "ajuste_final": {
+    "n_ajuste_interno": 66620,
+    "n_validacao_interna": 17486,
+    "fim_ajuste_interno": "2016-02-12 11:30:08+00:00",
+    "inicio_validacao_interna": "2016-02-12 11:45:12+00:00",
+    "fim_validacao_interna": "2017-10-06 17:12:24+00:00",
+    "contagens_fit": {
+      "0": 59768,
+      "1": 24338
+    },
+    "pesos_fit": {
+      "0": 1.0,
+      "1": 1.0
+    }
+  },
+  "regra": "Maior F1 médio externo; menor desvio; limiar fixo e sem pesos em empate."
+}

@@ -1,0 +1,126 @@
+{
+  "assinatura": "15f8db867ea407f2ed4302075f2c680a33c17b12c453b0f1f9b288895872b563",
+  "arquivos": {
+    "buscar_melhorias.py": "0e234725a5ac3c66c0db6d23c32c6ed0a37cf427e4d2a5f7a990bc7196ed0d4a",
+    "novas_pistas.py": "85a8f5ad87411c494aba90edc54c0b12fa5c6ea90810d0bf046668e8828b8038",
+    "extrair_dispersao.py": "dbba4c48dd1295e96de80607962386173827dbde534657c9f0ed4c99e0d6f139",
+    "PROTOCOLO_MELHORIAS.md": "60323e97602a39093dd74ec8efaa34923d4124e7c4094337ca9f378c7438b6ef",
+    "dados.py": "278910cd66fc4a4b491b3fc3df74b90476ec39e15542035ec3861a5bb8b1df77",
+    "extracao.py": "6b688fc14fc116fe76b801336173ba22d4292f140e6dbec84d7a5e60f0998fb4",
+    "esquema.py": "1f5863a218becbbc8797ed03044c7bb7c04fc94fefa491b09c7a1eb039926ead",
+    "treinamento.py": "60addad81de08adbd903fccf5389cf7c151696a415220fe9ba3ff24f52b7f594",
+    "revisar_balanceamento.py": "5fc085d945c5d3645dc6c9f9d6204129b229f5ad68b1f3a6e66a506155302f08",
+    "resultados/selecao.json": "bb194e88357c6f7ff779dce8c9a1be5eff9ab9e74336b9321bd0c0e1528cdfed"
+  },
+  "csv_sha256": "5097cbbbab8c4611a709b3cf95ac5c9fe5f62e619bab081911a2a247ddbed4e0",
+  "extrator_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+  "novas_pistas_sha256": "07c5e451e23e6671bc1afc7941def79bc0ea999271bef370d68f2eb2699bc82b",
+  "n_trials": {
+    "LightGBM": 24,
+    "XGBoost": 12
+  },
+  "controles": [
+    {
+      "id": "anterior_originais",
+      "tipo": "controle",
+      "modelo": "LightGBM",
+      "pistas": "originais",
+      "pesos": null,
+      "parametros": {
+        "n_estimators": 250,
+        "learning_rate": 0.07902978859187117,
+        "num_leaves": 27,
+        "min_child_samples": 60
+      }
+    },
+    {
+      "id": "anterior_razoes",
+      "tipo": "controle",
+      "modelo": "LightGBM",
+      "pistas": "razoes",
+      "pesos": null,
+      "parametros": {
+        "n_estimators": 250,
+        "learning_rate": 0.07902978859187117,
+        "num_leaves": 27,
+        "min_child_samples": 60
+      }
+    },
+    {
+      "id": "anterior_dispersao",
+      "tipo": "controle",
+      "modelo": "LightGBM",
+      "pistas": "dispersao",
+      "pesos": null,
+      "parametros": {
+        "n_estimators": 250,
+        "learning_rate": 0.07902978859187117,
+        "num_leaves": 27,
+        "min_child_samples": 60
+      }
+    },
+    {
+      "id": "regularizado_originais",
+      "tipo": "controle",
+      "modelo": "LightGBM",
+      "pistas": "originais",
+      "pesos": null,
+      "parametros": {
+        "n_estimators": 500,
+        "learning_rate": 0.03,
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "reg_alpha": 1.0,
+        "reg_lambda": 30.0,
+        "colsample_bytree": 0.8,
+        "subsample": 0.8,
+        "subsample_freq": 1
+      }
+    },
+    {
+      "id": "regularizado_razoes",
+      "tipo": "controle",
+      "modelo": "LightGBM",
+      "pistas": "razoes",
+      "pesos": null,
+      "parametros": {
+        "n_estimators": 500,
+        "learning_rate": 0.03,
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "reg_alpha": 1.0,
+        "reg_lambda": 30.0,
+        "colsample_bytree": 0.8,
+        "subsample": 0.8,
+        "subsample_freq": 1
+      }
+    },
+    {
+      "id": "regularizado_dispersao",
+      "tipo": "controle",
+      "modelo": "LightGBM",
+      "pistas": "dispersao",
+      "pesos": null,
+      "parametros": {
+        "n_estimators": 500,
+        "learning_rate": 0.03,
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "reg_alpha": 1.0,
+        "reg_lambda": 30.0,
+        "colsample_bytree": 0.8,
+        "subsample": 0.8,
+        "subsample_freq": 1
+      }
+    }
+  ],
+  "versoes": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "optuna": "5.0.0"
+  },
+  "holdout_usado_na_selecao": false
+}

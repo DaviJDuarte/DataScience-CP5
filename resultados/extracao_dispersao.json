@@ -1,0 +1,20 @@
+{
+  "codigo_sha256": "7b6cd1cb2ef2e83ade61864537db2831ace03fff1e68df1d82ceb7516c785564",
+  "extrator_original_sha256": "4e407172ee9526b3eb9675fa56bcc26118ee69505e3bb0ec096530e1e4412896",
+  "cache_sha256": "07c5e451e23e6671bc1afc7941def79bc0ea999271bef370d68f2eb2699bc82b",
+  "csv_sha256": "5097cbbbab8c4611a709b3cf95ac5c9fe5f62e619bab081911a2a247ddbed4e0",
+  "colunas": [
+    "n_entropia",
+    "n_entropia_normalizada",
+    "n_fracao_churn_max",
+    "n_coef_variacao_churn",
+    "n_subsistemas",
+    "n_profundidade_media",
+    "n_fracao_ld_teste",
+    "n_ld_max_arquivo"
+  ],
+  "linhas": 105839,
+  "paridade_estaticas_originais": true,
+  "usa_rotulos": false,
+  "definicao": "Diff textual contra o primeiro pai; entropia de adições + remoções por arquivo."
+}

@@ -1,0 +1,9 @@
+{
+  "candidatos": 8,
+  "folds_por_candidato": 3,
+  "mesmos_commits_validacao": true,
+  "n_validacao_por_candidato": 63940,
+  "ordem_temporal_interna_e_externa": true,
+  "referencia_reproduzida": true,
+  "holdout_avaliado": false
+}

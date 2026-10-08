@@ -1,0 +1,30 @@
+{
+  "codigo_sha256": "98f9ce5ffaa1a82eb1cea60b72668a2c7e9858b72c4ed6fd4e848d7efae64f1c",
+  "pacote_md5": "528bf0ee04b15976be6bf15f8efddc65",
+  "csv_sha256": "5097cbbbab8c4611a709b3cf95ac5c9fe5f62e619bab081911a2a247ddbed4e0",
+  "fontes_no_pacote_sha256": {
+    "apachejit/notebooks/data_linking_filtering.ipynb": "c66173e98d4231aa0e82a0d8d7e9a0e395b5503134c8a5bdf4c89bd51a1c012c",
+    "apachejit/notebooks/dataset_construction.ipynb": "ef3a60e5eec0ef9b4f4ac669af92f7a4d80edd4d5365f90097c448cc2295f495",
+    "apachejit/src/gitminer.py": "fc79f702255cea1580e210eff482f54ecf5bfe8a88117b6dc328593999c1c189",
+    "apachejit/src/collector.py": "0008fcf49c633c7a9418d0030c9aa2c42379a8472b6d0c0e98b48793740901fd",
+    "apachejit/src/gumtree.py": "741d221af038bb4a78b00509081d066b5b10eb14340e7e17e3288a6f47983e9d"
+  },
+  "pipeline_sha256_antes_e_depois": "380e3ae6e03ab8439a49a694391afcc21d5c035b7ae26ea5fb3074100afe0054",
+  "previsoes_validacao_sha256": "79a9178fd10696a9bf5dacde9b6d64c4a24e0d3970d4dd39fb2955c3cf0e104a",
+  "arquivos_sha256": {
+    "disponibilidade_temporal.csv": "51bea7a525ce43a4bb854954c3331aa0c698665c81d2c0d91f31ed01e03590c0",
+    "erros_por_familia.csv": "de1f7729f87a91de54ccba56d0918ffd7175e93ecc50fc58afa4bc48aeba814e",
+    "etapas.csv": "6579ba8e8725442e2ff26949c50b294c86e6a21a62371fc9e6adcdec3a77b7d1",
+    "evidencias_positivos.parquet": "9cdd379356a44eb217cf099282438aa7be6ef963f005d0f3592ad9decfbf19fe",
+    "familias.csv": "80e7ac8c6a97fb46c9368c9969adc77123563a61b2cdb6142b453e769c541f4d",
+    "fila_commits.csv": "b636d4a2eab7bfc558c754f8b75207f05d2718dd3d6411be9c2057ba514baef2",
+    "grupos_fonte.csv": "7b279188e4985285a18dcbf923da182721152e6be33c4fcf45e0a1b02d24f534",
+    "negativos_candidatos_descartados.csv": "bf0971a06b923edd1d26263d39e7fd115a130eae8dbe9544a007081607ae0ef0",
+    "por_periodo.csv": "9d4ab18bdbcf0b6875b4655e6260289a4cbbbe80b6e6311e11fbdd7a3c8c12df",
+    "positivos_para_revisao.csv": "69cb66c53c18f312e9afbb230064d2219a7ada28af356ec8bdec0c2ecdaf94f4",
+    "proveniencia.parquet": "175a0baebfeb944392e6aacc5416dc2b88f26f89b47bc07470ca5a61480057b8",
+    "resumo.json": "45d465853826842866ff7b764366652a0740d1ad5f2f13c1908bd9d7fcbc0587",
+    "vinculos_git.parquet": "4224979177086f936013fbd5b307c4daf999c44e5f9bec24a6be103b7f4d3140",
+    "vinculos_para_revisao.csv": "cf3ac0bb04bf68eb984de25ecee9fb52d9b1a8319d1c98d5b49b616101ad9867"
+  }
+}

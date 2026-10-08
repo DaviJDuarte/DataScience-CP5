@@ -1,0 +1,85 @@
+{
+  "periodo": "Sensibilidade: integração em 2019 ou depois.",
+  "n_teste": 10441,
+  "taxa_buggy": 0.10133129010631166,
+  "inicio": "2019-01-01 22:45:39+00:00",
+  "fim": "2019-12-26 18:29:09+00:00",
+  "metricas": {
+    "f1": 0.41502347417840374,
+    "precision": 0.31024801123069723,
+    "recall": 0.6266540642722117,
+    "acuracia": 0.8209941576477349,
+    "acuracia_balanceada": 0.7347807249848749,
+    "roc_auc": 0.827696975203718,
+    "average_precision": 0.3426012320148465
+  },
+  "original_mesmos_commits": {
+    "f1": 0.41798154212563265,
+    "precision": 0.3050847457627119,
+    "recall": 0.6635160680529301,
+    "acuracia": 0.812757398716598,
+    "acuracia_balanceada": 0.7465507442470768,
+    "roc_auc": 0.8323730101919833,
+    "average_precision": 0.36279476909973113
+  },
+  "anterior_mesmos_commits": {
+    "f1": 0.40962474935548554,
+    "precision": 0.2938758734073161,
+    "recall": 0.6758034026465028,
+    "acuracia": 0.8026051144526386,
+    "acuracia_balanceada": 0.7463531560818575,
+    "roc_auc": 0.8323730101919833,
+    "average_precision": 0.36279476909973113
+  },
+  "referencia_majoritaria": {
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "acuracia": 0.8986687098936883,
+    "acuracia_balanceada": 0.5,
+    "roc_auc": 0.5,
+    "average_precision": 0.10133129010631166
+  },
+  "matriz_confusao": [
+    [
+      7909,
+      1474
+    ],
+    [
+      395,
+      663
+    ]
+  ],
+  "matriz_original": [
+    [
+      7784,
+      1599
+    ],
+    [
+      356,
+      702
+    ]
+  ],
+  "matriz_anterior": [
+    [
+      7665,
+      1718
+    ],
+    [
+      343,
+      715
+    ]
+  ],
+  "incerteza_vs_anterior": {
+    "delta_f1_ic95": [
+      -0.003882407228447944,
+      0.015523420757456
+    ],
+    "repeticoes": 1000,
+    "blocos": 52,
+    "unidade": "semana de integração, amostragem pareada",
+    "limite": "Descritivo do período conhecido; não corrige adaptação ao holdout nem prova generalização."
+  },
+  "avaliacoes_nesta_versao": 1,
+  "ressalva": "Holdout conhecido: reavaliação exploratória; não é teste novo/intocado."
+}

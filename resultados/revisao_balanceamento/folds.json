@@ -1,0 +1,362 @@
+[
+  {
+    "id":"sem_pesos_fixo",
+    "class_weight":null,
+    "ajustar_limiar":false,
+    "fold":1,
+    "limiar":0.5,
+    "f1":0.5132270255,
+    "precision":0.7368978295,
+    "recall":0.3937208316,
+    "acuracia":0.741924449,
+    "acuracia_balanceada":0.6597487073,
+    "roc_auc":0.7800394271,
+    "average_precision":0.6607789455,
+    "contagens_fit":{
+      "0":15201,
+      "1":4965
+    },
+    "pesos_fit":{
+      "0":1.0,
+      "1":1.0
+    },
+    "fim_treino":"2011-03-21 23:56:35+00:00",
+    "inicio_validacao":"2011-03-22 00:22:04+00:00",
+    "n_validacao":20463,
+    "n_ajuste_interno":null,
+    "n_validacao_interna":null,
+    "fim_ajuste_interno":null,
+    "inicio_validacao_interna":null,
+    "fim_validacao_interna":null
+  },
+  {
+    "id":"sem_pesos_fixo",
+    "class_weight":null,
+    "ajustar_limiar":false,
+    "fold":2,
+    "limiar":0.5,
+    "f1":0.5370155039,
+    "precision":0.6358421294,
+    "recall":0.4647769205,
+    "acuracia":0.7795922133,
+    "acuracia_balanceada":0.6818985137,
+    "roc_auc":0.7928366675,
+    "average_precision":0.5792828558,
+    "contagens_fit":{
+      "0":28593,
+      "1":12036
+    },
+    "pesos_fit":{
+      "0":1.0,
+      "1":1.0
+    },
+    "fim_treino":"2014-02-21 10:56:47+00:00",
+    "inicio_validacao":"2014-02-21 11:26:01+00:00",
+    "n_validacao":21678,
+    "n_ajuste_interno":null,
+    "n_validacao_interna":null,
+    "fim_ajuste_interno":null,
+    "inicio_validacao_interna":null,
+    "fim_validacao_interna":null
+  },
+  {
+    "id":"sem_pesos_fixo",
+    "class_weight":null,
+    "ajustar_limiar":false,
+    "fold":3,
+    "limiar":0.5,
+    "f1":0.6324610409,
+    "precision":0.5922356828,
+    "recall":0.6785488959,
+    "acuracia":0.7706316804,
+    "acuracia_balanceada":0.7434726496,
+    "roc_auc":0.8264909643,
+    "average_precision":0.6589359875,
+    "contagens_fit":{
+      "0":44309,
+      "1":17998
+    },
+    "pesos_fit":{
+      "0":1.0,
+      "1":1.0
+    },
+    "fim_treino":"2015-09-10 07:34:24+00:00",
+    "inicio_validacao":"2015-09-10 07:42:01+00:00",
+    "n_validacao":21799,
+    "n_ajuste_interno":null,
+    "n_validacao_interna":null,
+    "fim_ajuste_interno":null,
+    "inicio_validacao_interna":null,
+    "fim_validacao_interna":null
+  },
+  {
+    "id":"sem_pesos_ajustado",
+    "class_weight":null,
+    "ajustar_limiar":true,
+    "fold":1,
+    "limiar":0.29,
+    "f1":0.6051031004,
+    "precision":0.636250195,
+    "recall":0.5768632442,
+    "acuracia":0.7398230953,
+    "acuracia_balanceada":0.7013647165,
+    "roc_auc":0.7800394271,
+    "average_precision":0.6607789455,
+    "contagens_fit":{
+      "0":15201,
+      "1":4965
+    },
+    "pesos_fit":{
+      "0":1.0,
+      "1":1.0
+    },
+    "fim_treino":"2011-03-21 23:56:35+00:00",
+    "inicio_validacao":"2011-03-22 00:22:04+00:00",
+    "n_validacao":20463,
+    "n_ajuste_interno":16128.0,
+    "n_validacao_interna":4038.0,
+    "fim_ajuste_interno":"2010-06-25 05:38:24+00:00",
+    "inicio_validacao_interna":"2010-06-25 05:47:02+00:00",
+    "fim_validacao_interna":"2011-03-21 23:56:35+00:00"
+  },
+  {
+    "id":"sem_pesos_ajustado",
+    "class_weight":null,
+    "ajustar_limiar":true,
+    "fold":2,
+    "limiar":0.26,
+    "f1":0.5888139404,
+    "precision":0.5066505441,
+    "recall":0.7027843006,
+    "acuracia":0.7300488975,
+    "acuracia_balanceada":0.7215881289,
+    "roc_auc":0.7928366675,
+    "average_precision":0.5792828558,
+    "contagens_fit":{
+      "0":28593,
+      "1":12036
+    },
+    "pesos_fit":{
+      "0":1.0,
+      "1":1.0
+    },
+    "fim_treino":"2014-02-21 10:56:47+00:00",
+    "inicio_validacao":"2014-02-21 11:26:01+00:00",
+    "n_validacao":21678,
+    "n_ajuste_interno":32402.0,
+    "n_validacao_interna":8227.0,
+    "fim_ajuste_interno":"2012-12-18 12:02:26+00:00",
+    "inicio_validacao_interna":"2012-12-18 12:53:39+00:00",
+    "fim_validacao_interna":"2014-02-21 10:56:47+00:00"
+  },
+  {
+    "id":"sem_pesos_ajustado",
+    "class_weight":null,
+    "ajustar_limiar":true,
+    "fold":3,
+    "limiar":0.27,
+    "f1":0.6243714185,
+    "precision":0.4960973797,
+    "recall":0.8421135647,
+    "acuracia":0.7053075829,
+    "acuracia_balanceada":0.7456573386,
+    "roc_auc":0.8264909643,
+    "average_precision":0.6589359875,
+    "contagens_fit":{
+      "0":44309,
+      "1":17998
+    },
+    "pesos_fit":{
+      "0":1.0,
+      "1":1.0
+    },
+    "fim_treino":"2015-09-10 07:34:24+00:00",
+    "inicio_validacao":"2015-09-10 07:42:01+00:00",
+    "n_validacao":21799,
+    "n_ajuste_interno":49502.0,
+    "n_validacao_interna":12805.0,
+    "fim_ajuste_interno":"2014-10-31 15:02:03+00:00",
+    "inicio_validacao_interna":"2014-10-31 15:44:40+00:00",
+    "fim_validacao_interna":"2015-09-10 07:34:24+00:00"
+  },
+  {
+    "id":"balanced_fixo",
+    "class_weight":"balanced",
+    "ajustar_limiar":false,
+    "fold":1,
+    "limiar":0.5,
+    "f1":0.5891603053,
+    "precision":0.6400729806,
+    "recall":0.5457502475,
+    "acuracia":0.7369887113,
+    "acuracia_balanceada":0.6918566052,
+    "roc_auc":0.7721246551,
+    "average_precision":0.6555526943,
+    "contagens_fit":{
+      "0":15201,
+      "1":4965
+    },
+    "pesos_fit":{
+      "0":0.6633116242,
+      "1":2.03081571
+    },
+    "fim_treino":"2011-03-21 23:56:35+00:00",
+    "inicio_validacao":"2011-03-22 00:22:04+00:00",
+    "n_validacao":20463,
+    "n_ajuste_interno":null,
+    "n_validacao_interna":null,
+    "fim_ajuste_interno":null,
+    "inicio_validacao_interna":null,
+    "fim_validacao_interna":null
+  },
+  {
+    "id":"balanced_fixo",
+    "class_weight":"balanced",
+    "ajustar_limiar":false,
+    "fold":2,
+    "limiar":0.5,
+    "f1":0.5820294345,
+    "precision":0.5407311457,
+    "recall":0.6301576652,
+    "acuracia":0.7510840483,
+    "acuracia_balanceada":0.7135580894,
+    "roc_auc":0.7857027068,
+    "average_precision":0.5716749843,
+    "contagens_fit":{
+      "0":28593,
+      "1":12036
+    },
+    "pesos_fit":{
+      "0":0.7104710943,
+      "1":1.6878115653
+    },
+    "fim_treino":"2014-02-21 10:56:47+00:00",
+    "inicio_validacao":"2014-02-21 11:26:01+00:00",
+    "n_validacao":21678,
+    "n_ajuste_interno":null,
+    "n_validacao_interna":null,
+    "fim_ajuste_interno":null,
+    "inicio_validacao_interna":null,
+    "fim_validacao_interna":null
+  },
+  {
+    "id":"balanced_fixo",
+    "class_weight":"balanced",
+    "ajustar_limiar":false,
+    "fold":3,
+    "limiar":0.5,
+    "f1":0.6307149805,
+    "precision":0.5131578947,
+    "recall":0.8181388013,
+    "acuracia":0.7213633653,
+    "acuracia_balanceada":0.7499064535,
+    "roc_auc":0.824575916,
+    "average_precision":0.6522597847,
+    "contagens_fit":{
+      "0":44309,
+      "1":17998
+    },
+    "pesos_fit":{
+      "0":0.7030964364,
+      "1":1.7309423269
+    },
+    "fim_treino":"2015-09-10 07:34:24+00:00",
+    "inicio_validacao":"2015-09-10 07:42:01+00:00",
+    "n_validacao":21799,
+    "n_ajuste_interno":null,
+    "n_validacao_interna":null,
+    "fim_ajuste_interno":null,
+    "inicio_validacao_interna":null,
+    "fim_validacao_interna":null
+  },
+  {
+    "id":"balanced_ajustado",
+    "class_weight":"balanced",
+    "ajustar_limiar":true,
+    "fold":1,
+    "limiar":0.53,
+    "f1":0.581895533,
+    "precision":0.6568836713,
+    "recall":0.5222740772,
+    "acuracia":0.7406538631,
+    "acuracia_balanceada":0.6891164293,
+    "roc_auc":0.7721246551,
+    "average_precision":0.6555526943,
+    "contagens_fit":{
+      "0":15201,
+      "1":4965
+    },
+    "pesos_fit":{
+      "0":0.6633116242,
+      "1":2.03081571
+    },
+    "fim_treino":"2011-03-21 23:56:35+00:00",
+    "inicio_validacao":"2011-03-22 00:22:04+00:00",
+    "n_validacao":20463,
+    "n_ajuste_interno":16128.0,
+    "n_validacao_interna":4038.0,
+    "fim_ajuste_interno":"2010-06-25 05:38:24+00:00",
+    "inicio_validacao_interna":"2010-06-25 05:47:02+00:00",
+    "fim_validacao_interna":"2011-03-21 23:56:35+00:00"
+  },
+  {
+    "id":"balanced_ajustado",
+    "class_weight":"balanced",
+    "ajustar_limiar":true,
+    "fold":2,
+    "limiar":0.38,
+    "f1":0.5802271209,
+    "precision":0.4821269982,
+    "recall":0.7284468299,
+    "acuracia":0.7101208599,
+    "acuracia_balanceada":0.7158077876,
+    "roc_auc":0.7857027068,
+    "average_precision":0.5716749843,
+    "contagens_fit":{
+      "0":28593,
+      "1":12036
+    },
+    "pesos_fit":{
+      "0":0.7104710943,
+      "1":1.6878115653
+    },
+    "fim_treino":"2014-02-21 10:56:47+00:00",
+    "inicio_validacao":"2014-02-21 11:26:01+00:00",
+    "n_validacao":21678,
+    "n_ajuste_interno":32402.0,
+    "n_validacao_interna":8227.0,
+    "fim_ajuste_interno":"2012-12-18 12:02:26+00:00",
+    "inicio_validacao_interna":"2012-12-18 12:53:39+00:00",
+    "fim_validacao_interna":"2014-02-21 10:56:47+00:00"
+  },
+  {
+    "id":"balanced_ajustado",
+    "class_weight":"balanced",
+    "ajustar_limiar":true,
+    "fold":3,
+    "limiar":0.44,
+    "f1":0.6184748201,
+    "precision":0.4869053013,
+    "recall":0.8474763407,
+    "acuracia":0.6959034818,
+    "acuracia_balanceada":0.7406086018,
+    "roc_auc":0.824575916,
+    "average_precision":0.6522597847,
+    "contagens_fit":{
+      "0":44309,
+      "1":17998
+    },
+    "pesos_fit":{
+      "0":0.7030964364,
+      "1":1.7309423269
+    },
+    "fim_treino":"2015-09-10 07:34:24+00:00",
+    "inicio_validacao":"2015-09-10 07:42:01+00:00",
+    "n_validacao":21799,
+    "n_ajuste_interno":49502.0,
+    "n_validacao_interna":12805.0,
+    "fim_ajuste_interno":"2014-10-31 15:02:03+00:00",
+    "inicio_validacao_interna":"2014-10-31 15:44:40+00:00",
+    "fim_validacao_interna":"2015-09-10 07:34:24+00:00"
+  }
+]
