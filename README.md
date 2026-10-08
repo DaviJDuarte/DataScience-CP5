@@ -6,7 +6,7 @@ probabilidade calibrada.
 
 **Entrega principal:** [notebook executado](Checkpoint05_resolvido.ipynb), organizado nos sete exercícios.
 **Código:** [GitHub](https://github.com/DaviJDuarte/DataScience-CP5). **Aplicativo publicado:** [Streamlit](https://datascience-cp5-davi.streamlit.app/).
-Os resultados abaixo correspondem ao pacote local; o endereço publicado ainda precisa receber estes arquivos.
+Os resultados abaixo são os da versão publicada neste repositório; o aplicativo publicado usa o mesmo modelo e o mesmo limiar.
 
 | Integrante | RM |
 |---|---|
